@@ -3,13 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Charity Sun | Sparki Project</title>
     <link href="img/homepage/png/favicon.png" rel="shortcut icon">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="stylesheet" type="text/csss" href="css/styles.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- Main Font / Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <!-- Accent Font / Berkshire Swash-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="sparki">
     <header><!-- Section / Orange-->
         <div><!-- Container / Yellow-->
             <a href="index.html">
@@ -23,10 +36,10 @@
 
             <nav>
                 <ul>
-                    <li><a href="index.html">Projects</a></li>
-                    <li><a href="graphics.html">Graphics</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html" class="button navigation">Projects</a></li>
+                    <li><a href="graphics.html" class="button navigation">Graphics</a></li>
+                    <li><a href="about.html" class="button navigation">About</a></li>
+                    <li><a href="contact.html" class="button navigation">Contact</a></li>
                     <li><a href="https://www.linkedin.com/in/charitysun/">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -44,23 +57,21 @@
 
     <main>
         <div><!-- Section / Orange-->
-            <div><!-- Container / Yellow-->
+            <div id="hero"><!-- Container / Yellow-->
                 <picture>
-                    <source srcset="img/projects/project-sparki/JPG/600px/hero-600px.jpg"
-                        media="(max-width:767px)">
-                    <img src="img/projects/project-sparki/JPG/1200px/hero-1200px.jpg"
-                        alt="Sparky case study cover">
+                    <source srcset="img/projects/project-sparki/JPG/600px/hero-600px.jpg" media="(max-width:767px)">
+                    <img src="img/projects/project-sparki/JPG/1200px/hero-1200px.jpg" alt="Sparky case study cover">
                 </picture>
             </div>
         </div>
 
         <div><!-- Section / Orange-->
-            <div><!-- Container / Yellow-->
+            <div id="problem"><!-- Container / Yellow-->
                 <h2>Problem Statement</h2>
                 <p>How might we design a mobile app that empowers people to learn new vocabulary?</p>
             </div>
 
-            <div><!-- Container / Yellow-->
+            <div id="goal"><!-- Container / Yellow-->
                 <h2>Objectives & Goals</h2>
                 <h3>The Challenge</h3>
                 <p>
@@ -98,7 +109,7 @@
         </div>
 
         <div><!-- Section / Orange-->
-            <div><!-- Container / Yellow-->
+            <div id="phases"><!-- Container / Yellow-->
                 <h2>Project Phases</h2>
                 <picture>
                     <source srcset="img/projects/project-sparki/PNG/600px/project-phases-600px.png"
@@ -108,7 +119,7 @@
                 </picture>
             </div>
 
-            <div><!-- Container / Yellow-->
+            <div id="sections"><!-- Container / Yellow-->
                 <div><!-- Row / Green-->
                     <div><!-- Teal / Column-->
                         <h3>Research Phase</h3>
@@ -126,7 +137,7 @@
                                 Affinity Maps
                             </li>
                         </ul>
-                        <a href="#research">Jump to Section
+                        <a href="#research" class="button text">Jump to Section
                             <img src="img/projects/project-sparki/SVG/arrow-icon.svg" alt="Arrow icon">
 
                         </a>
@@ -148,7 +159,7 @@
                                 User Flows
                             </li>
                         </ul>
-                        <a href="#empathy">Jump to Section
+                        <a href="#empathy" class="button text">Jump to Section
                             <img src="img/projects/project-sparki/SVG/arrow-icon.svg" alt="Arrow icon">
 
                         </a>
@@ -170,7 +181,7 @@
                                 Implementing Changes
                             </li>
                         </ul>
-                        <a href="#design">Jump to Section
+                        <a href="#design" class="button text">Jump to Section
                             <img src="img/projects/project-sparki/SVG/arrow-icon.svg" alt="Arrow icon">
 
                         </a>
@@ -181,8 +192,10 @@
         </div>
 
         <div><!-- Section / Orange-->
-            <div><!-- Container / Yellow-->
-                <a id="research"><h2>Phase 1 - Discover</h2></a>
+            <div id="discover"><!-- Container / Yellow-->
+                <a id="research">
+                    <h2>Phase 1 - Discover</h2>
+                </a>
                 <h3>Exploratory Research | User Interviews | Competitive Research</h3>
                 <p>
                     My first step in the project was to research. I conducted interviews to understand how potential
@@ -225,7 +238,7 @@
         </div>
 
         <div><!-- Section / Orange-->
-            <div><!-- Container / Yellow-->
+            <div id="explore"><!-- Container / Yellow-->
                 <h2>Exploratory Research</h2>
                 <p>
                     During the research stage, I interviewed several participants to understand how potential customers
@@ -244,8 +257,7 @@
                 <picture>
                     <source srcset="img/projects/project-sparki/PNG/600px/interview-analysis-600px.png"
                         media="(max-width:767px)">
-                    <img src="img/projects/project-sparki/PNG/1200px/interview-analysis-1200px.png"
-                        alt="Analysis map">
+                    <img src="img/projects/project-sparki/PNG/1200px/interview-analysis-1200px.png" alt="Analysis map">
                 </picture>
 
                 <h2>Competitor Research</h2>
@@ -260,8 +272,10 @@
         </div>
 
         <div><!-- Section / Orange-->
-            <div><!-- Container / Yellow-->
-                <a id="empathy"><h2>Phase 2- Define</h2></a>
+            <div id="empathize"><!-- Container / Yellow-->
+                <a id="empathy">
+                    <h2>Phase 2- Define</h2>
+                </a>
                 <h3>User Personas | Task Analysis | User Flows</h3>
                 <h3>Persona</h3>
                 <p>
@@ -278,26 +292,24 @@
         </div>
 
         <div><!-- Section / Orange-->
-            <div><!-- Container / Yellow-->
+            <div id="persona"><!-- Container / Yellow-->
                 <h2>Sparki’s Persona</h2>
                 <h3>
                     User stories | Problem statement | Hypothesis statement
                 </h3>
                 <picture>
-                    <source srcset="img/projects/project-sparki/JPG/600px/persona-600px.jpg"
-                        media="(max-width:767px)">
+                    <source srcset="img/projects/project-sparki/JPG/600px/persona-600px.jpg" media="(max-width:767px)">
                     <img src="img/projects/project-sparki/JPG/1200px/persona-1200px.jpg" alt="Persona">
                 </picture>
                 <picture>
-                    <source srcset="img/projects/project-sparki/PNG/600px/persona2-600px.png"
-                        media="(max-width:767px)">
+                    <source srcset="img/projects/project-sparki/PNG/600px/persona2-600px.png" media="(max-width:767px)">
                     <img src="img/projects/project-sparki/PNG/1200px/persona2-1200px.png" alt="User stories">
                 </picture>
             </div>
         </div>
 
         <div><!-- Section / Orange-->
-            <div><!-- Container / Yellow-->
+            <div id="ideate"><!-- Container / Yellow-->
                 <h2>Phase 3 - Ideate 💡</h2>
                 <h3>
                     User Personas | Task Analysis | User Flows
@@ -325,8 +337,10 @@
         </div>
 
         <div><!-- Section / Orange-->
-            <div><!-- Container / Yellow-->
-                <a id="design"><h2>Phase 4 - Design and Test</h2></a>
+            <div id="prototyping"><!-- Container / Yellow-->
+                <a id="design">
+                    <h2>Phase 4 - Design and Test</h2>
+                </a>
                 <h3>
                     Paper Wireframes | Low and Mid-Fidelity Prototypes
                     Brainstorming a Solution
@@ -343,43 +357,37 @@
                 <picture>
                     <source srcset="img/projects/project-sparki/PNG/600px/wireframe1-600px.png"
                         media="(max-width:767px)">
-                    <img src="img/projects/project-sparki/PNG/1200px/wireframe1-1200px.png"
-                        alt="Paper wireframe 1">
+                    <img src="img/projects/project-sparki/PNG/1200px/wireframe1-1200px.png" alt="Paper wireframe 1">
                 </picture>
 
                 <picture>
                     <source srcset="img/projects/project-sparki/PNG/600px/wireframe2-600px.png"
                         media="(max-width:767px)">
-                    <img src="img/projects/project-sparki/PNG/1200px/wireframe2-1200px.png"
-                        alt="Paper wireframe 2">
+                    <img src="img/projects/project-sparki/PNG/1200px/wireframe2-1200px.png" alt="Paper wireframe 2">
                 </picture>
 
                 <picture>
                     <source srcset="img/projects/project-sparki/PNG/600px/wireframe3-600px.png"
                         media="(max-width:767px)">
-                    <img src="img/projects/project-sparki/PNG/1200px/wireframe3-1200px.png"
-                        alt="Paper wireframe 3">
+                    <img src="img/projects/project-sparki/PNG/1200px/wireframe3-1200px.png" alt="Paper wireframe 3">
                 </picture>
 
                 <picture>
                     <source srcset="img/projects/project-sparki/PNG/600px/wireframe4-600px.png"
                         media="(max-width:767px)">
-                    <img src="img/projects/project-sparki/PNG/1200px/wireframe4-1200px.png"
-                        alt="Paper wireframe 4">
+                    <img src="img/projects/project-sparki/PNG/1200px/wireframe4-1200px.png" alt="Paper wireframe 4">
                 </picture>
 
                 <picture>
                     <source srcset="img/projects/project-sparki/PNG/600px/wireframe5-600px.png"
                         media="(max-width:767px)">
-                    <img src="img/projects/project-sparki/PNG/1200px/wireframe5-1200px.png"
-                        alt="Paper wireframe 5">
+                    <img src="img/projects/project-sparki/PNG/1200px/wireframe5-1200px.png" alt="Paper wireframe 5">
                 </picture>
 
                 <picture>
                     <source srcset="img/projects/project-sparki/PNG/600px/wireframe6-600px.png"
                         media="(max-width:767px)">
-                    <img src="img/projects/project-sparki/PNG/1200px/wireframe6-1200px.png"
-                        alt="Paper wireframe 6">
+                    <img src="img/projects/project-sparki/PNG/1200px/wireframe6-1200px.png" alt="Paper wireframe 6">
                 </picture>
 
                 <h2>Wireframes</h2>
@@ -429,7 +437,7 @@
         </div>
 
         <div><!-- Section / Orange-->
-            <div><!-- Container / Yellow-->
+            <div id="testing"><!-- Container / Yellow-->
                 <h2>Phase 4 - Testing the Design</h2>
                 <h3>Usability Testing | Usability Report</h3>
                 <p>
@@ -444,8 +452,7 @@
                 <picture>
                     <source srcset="img/projects/project-sparki/PNG/600px/test-plan-600px.png"
                         media="(max-width:767px)">
-                    <img src="img/projects/project-sparki/PNG/1200px/test-plan-1200px.png"
-                        alt="Usability test plan">
+                    <img src="img/projects/project-sparki/PNG/1200px/test-plan-1200px.png" alt="Usability test plan">
                 </picture>
 
                 <h2>Usability Test Plan</h2>
@@ -464,8 +471,7 @@
                 <picture>
                     <source srcset="img/projects/project-sparki/PNG/600px/test-results-600px.png"
                         media="(max-width:767px)">
-                    <img src="img/projects/project-sparki/PNG/1200px/test-results-1200px.png"
-                        alt="Usability testing">
+                    <img src="img/projects/project-sparki/PNG/1200px/test-results-1200px.png" alt="Usability testing">
                 </picture>
 
                 <h2>Usability Test Report</h2>
@@ -492,7 +498,7 @@
         </div>
 
         <div><!-- Section / Orange-->
-            <div><!-- Container / Yellow-->
+            <div id="analyzing"><!-- Container / Yellow-->
                 <h2>Analyzing and Implementing Changes</h2>
                 <p>
                     After conducting usability tests on my prototypes, I prioritized the usability issues found during
@@ -505,8 +511,11 @@
                         <div><!-- Green / Row-->
                             <div><!-- Teal / Row-->
                                 <h3>Viewing Quizzes</h3>
+                                <h4>
+                                    Problem
+                                </h4>
                                 <p>
-                                    Problem <br>Users found it difficult to locate the quizzes
+                                    Users found it difficult to locate the quizzes
                                 </p>
                             </div>
 
@@ -540,7 +549,7 @@
                     </div>
 
                     <div><!-- Teal / Row-->
-                        <p>Solution</p>
+                        <h4>Solution</h4>
                         <ol>
                             <li>Allow users to view quizzes first</li>
                             <li>Make the folder view a second option</li>
@@ -553,7 +562,7 @@
         </div>
 
         <div><!-- Section / Orange-->
-            <div><!-- Container / Yellow-->
+            <div id="issues"><!-- Container / Yellow-->
 
                 <div><!-- Green / Row-->
                     <div><!-- Teal / Row-->
@@ -561,15 +570,21 @@
                         <div><!-- Green / Row-->
                             <div><!-- Teal / Row-->
                                 <h3>Make Quiz Button</h3>
+                                <h4>
+                                    Problem
+                                </h4>
                                 <p>
-                                    Problem <br>Several testers found making a new quiz hard because the plus button
+                                    Several testers found making a new quiz hard because the plus button
                                     wasn’t clear enough.
                                 </p>
                             </div>
 
                             <div><!-- Teal / Row-->
+                                <h4>
+                                    Solution
+                                </h4>
                                 <p>
-                                    Solution <br>Change the icon button into a text button.
+                                    Change the icon button into a text button.
                                 </p>
                             </div>
                         </div>
@@ -596,9 +611,11 @@
                     </div>
 
                     <div><!-- Teal / Row-->
-                        <p>
+                         <h4>
                             Developing the new quiz feature
-                            <br>Making new quizzes is an important feature of the app. I added a new tab so users could
+                         </h4>
+                        <p>
+                            Making new quizzes is an important feature of the app. I added a new tab so users could
                             quickly and easily add new quizzes from anywhere in the app.
                         </p>
                     </div>
@@ -608,7 +625,7 @@
         </div>
 
         <div><!-- Section / Orange-->
-            <div><!-- Container / Yellow-->
+            <div id="takeaways"><!-- Container / Yellow-->
                 <h2>Final Thoughts</h2>
                 <p>
                     Throughout this project, I learn many things about my target audience, analyzing information, and
@@ -645,14 +662,14 @@
                         subscriptions and paid upgrades to the app.
                     </li>
                 </ul>
-                <a href="index.html">Return to case studies</a>
+                <a href="index.html" class="button">Return to case studies</a>
             </div>
         </div>
 
     </main>
 
     <footer><!-- Section / Orange-->
-        <div><!-- Container / Yellow-->
+        <div id="contact"><!-- Container / Yellow-->
             <h2>Get in Touch</h2>
             <a href="https://www.linkedin.com/in/charitysun/" target="_blank"><!-- Link / LinkedIn Icon-->
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">

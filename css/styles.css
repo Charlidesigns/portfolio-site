@@ -1,10 +1,11 @@
 /*
 Colors used:
-Primary Color (Red): #FB5950;
+Primary Color/header color (Red): #FB5950;
 Secondary Color (Light Gray): #F2F3F7
 
 Primary Text Color (Dark Gray): #595959
-Small Text Accent Color (Dark Red): #E61E1E
+Large Text Accent Color/red-font1 (Red): #FB463C
+Small Text Accent Color/red-font-2 (Dark Red): #DB0042
 */
 
 body {
@@ -15,6 +16,7 @@ body {
     color: #595959;
 }
 
+/* ---------- Fonts ---------- */
 h1,
 h2,
 h3,
@@ -38,6 +40,7 @@ h3 {
     font-family: "Berkshire Swash", serif;
     font-weight: 400;
     font-style: normal;
+    color: #FB463C;
 }
 
 .h1-medium {
@@ -46,15 +49,45 @@ h3 {
     font-style: normal;
 }
 
-/* Img */
+.h4-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* ---------- Font color ---------- */
+.red-font-1 {
+    color: #FB463C;
+}
+
+.red-font-2 {
+    color: #DB0042;
+}
+
+/* ---------- Img ---------- */
 img {
     width: 100%
 }
 
-/* Buttons */
+/*  ---------- Links ----------*/
+.link {
+    color: #DB0042;
+
+}
+
+.link:hover,
+link:focus {
+    color: #C2002E;
+}
+
+.link:visited {
+    color: #850020;
+}
+
+/* ----------Buttons ---------- */
 .button {
     display: inline-block;
-    background-color: #FB5950;
+    background-color: #FB463C;
     color: #ffffff;
     font-weight: 700;
     text-decoration: none;
@@ -65,30 +98,47 @@ img {
     padding-left: 24px;
 }
 
-.button:hover, .button:focus {
-    background-color: #E61E1E;
+.button:hover,
+.button:focus {
+    background-color: #DB0042;
 }
 
 .button:active {
-    background-color: #CF0000;
+    background-color: #C2002E;
 }
 
-/* Secondary buttons */
-.button.secondary {
+/* Outlined buttons */
+.button.outlined {
     background-color: transparent;
-    color: #FB5950;
+    color: #FB463C;
     border-style: solid;
     border-width: 2px;
-    border-color: #FB5950;
+    border-color: #FB463C;
 }
 
-.button.secondary:hover,.button.secondary:focus {
-    background-color: rgb(230 30 30 / 8%);
+.button.outlined:hover,
+.button.outlined:focus {
+    background-color: rgb(251 80 80 / 8%);
 }
 
 
-.button.secondary:active {
-    background-color: rgba(177, 0, 0, 0.12);
+.button.outlined:active {
+    background-color: rgb(251 80 80 / 12%);
+}
+
+/* Text buttons */
+.button.text {
+    background-color: transparent;
+    color: #DB0042;
+}
+
+.button.text:hover,
+.button.text:focus {
+    color: #C2002E;
+}
+
+.button.text:active {
+    color: #850020;
 }
 
 /* Navigation buttons */
@@ -100,7 +150,8 @@ img {
 
 }
 
-.button.navigation:hover, .button.navigation:focus  {
-    background-color: #FB5950;
+.button.navigation:hover,
+.button.navigation:focus {
+    background-color: #FB463C;
     text-decoration: underline;
 }
