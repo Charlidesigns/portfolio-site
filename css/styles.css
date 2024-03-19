@@ -93,9 +93,7 @@ link:focus {
     text-decoration: none;
     transition: 0.2s opacity;
     border-radius: 100px;
-    padding: 10px;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding: 10px 24px;
 }
 
 .button:hover,
@@ -142,16 +140,23 @@ link:focus {
 }
 
 /* Navigation buttons */
-.button.navigation {
-    /*
-    !!! Background color = transparent when navigation background is added !!!
-    */
+.navigation {
     color: #ffffff;
-
+    text-decoration: none;
 }
 
-.button.navigation:hover,
-.button.navigation:focus {
-    background-color: #FB463C;
+.navigation:hover,
+.navigation:focus {
     text-decoration: underline;
+}
+
+.navigation:active {
+    text-decoration: underline;
+}
+
+/* ----------Components ---------- */
+/* header */
+header {
+    background-color: #FB463C;
+    padding: 10px;
 }
