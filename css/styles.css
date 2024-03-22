@@ -8,9 +8,13 @@ Large Text Accent Color/red-font1 (Red): #FB463C
 Small Text Accent Color/red-font-2 (Dark Red): #DB0042
 */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 1.4;
     color: #595959;
@@ -25,15 +29,15 @@ h4 {
 }
 
 h1 {
-    font-size: 3.5em;
-}
-
-h2 {
     font-size: 2.5em;
 }
 
+h2 {
+    font-size: 1.3em;
+}
+
 h3 {
-    font-size: 1.5em;
+    font font-weight: 700;
 }
 
 .acent-font {
@@ -43,7 +47,7 @@ h3 {
     color: #FB463C;
 }
 
-.h1-medium {
+.h2-medium {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -64,9 +68,19 @@ h3 {
     color: #DB0042;
 }
 
+.white-font-2 {
+    color: #ffffff;
+}
+
 /* ---------- Img ---------- */
 img {
     width: 100%
+}
+
+.icon {
+    /* cherry icon width*/
+    max-width: 50px;
+    text-align: center;
 }
 
 /*  ---------- Links ----------*/
@@ -99,10 +113,19 @@ link:focus {
 .button:hover,
 .button:focus {
     background-color: #DB0042;
+    box-shadow: 0 3px 5px rgba(219, 0, 66, 0.2);
+    -webkit-box-shadow: 0 3px 5px rgba(219, 0, 66, 0.2);
+    -moz-box-shadow: 0 3px 5px rgba(219, 0, 66, 0.2);
 }
 
 .button:active {
     background-color: #C2002E;
+}
+
+.button.wide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Outlined buttons */
@@ -139,24 +162,135 @@ link:focus {
     color: #850020;
 }
 
-/* Navigation buttons */
-.navigation {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.navigation:hover,
-.navigation:focus {
-    text-decoration: underline;
-}
-
-.navigation:active {
-    text-decoration: underline;
-}
-
 /* ----------Components ---------- */
 /* header */
 header {
-    background-color: #FB463C;
+    background-color: #FB5950;
+    text-align: center;
     padding: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+}
+
+/* navigation */
+nav {
+    display: inline-block;
+    width: 100%;
+}
+
+nav>ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+nav>ul>li {
+    display: inline-block;
+}
+
+nav>ul>li>a {
+    padding: 0 10px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav>ul>li>a:hover,
+nav>ul>li>a:focus {
+    text-decoration: underline;
+}
+
+nav>ul>li>a:active {
+    text-decoration: underline;
+}
+
+nav>ul>li>a:visited {
+    text-decoration: underline;
+}
+
+/* ---------- Layout Styling ---------- */
+main {
+    /* Header top spacing */
+    padding-top: 95px;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.row {
+    width: 100%;
+    display: inline-block;
+    margin: 25px 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button.row {
+    margin: 10px;
+    text-align: center;
+}
+
+/* --- Index Page --- */
+/* Hero */
+#hero h1,
+h2,
+p {
+    text-align: center;
+}
+
+#hero {
+    background-image: url("../img/homepage/png/introduction-background-600px.png");
+    padding: 80px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+/* --- Projects --- */
+#project h1,
+h3,
+h4,
+p {
+    text-align: center;
+}
+
+#project .container {
+    margin: 20px 0;
+}
+
+#project .row {
+    margin: 40px 0;
+}
+
+/* --- Footer --- */
+footer {
+    width: 100%;
+    display: inline-block;
+    background-color: #F2F3F7;
+    list-style-type: none;
+    padding: 80px 0;
+}
+
+#contact h1 {
+    text-align: center;
+}
+
+/* --- About Page --- */
+/* Hero */
+#about-me
+h1,
+h2,
+h3,
+h4,
+p {
+    text-align: left;
 }
