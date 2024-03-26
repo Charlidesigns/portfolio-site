@@ -37,7 +37,7 @@ h2 {
 }
 
 h3 {
-    font font-weight: 700;
+    font-weight: 700;
 }
 
 .acent-font {
@@ -82,6 +82,7 @@ img {
     max-width: 50px;
     text-align: center;
 }
+
 .button-icon {
     max-width: 20px;
 }
@@ -242,6 +243,7 @@ main {
     padding: 0 26px;
     margin-top: 40px;
 }
+
 .padding-list {
     padding: 15px;
 }
@@ -265,7 +267,7 @@ main {
 
 /* Text spacing */
 .center-text {
-text-align: center;
+    text-align: center;
 }
 
 /* --- Footer --- */
@@ -319,8 +321,8 @@ footer {
 }
 
 .project-spacing {
-   margin-top: 30px;
-   margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /* --- Graphics --- */
@@ -329,35 +331,33 @@ footer {
 }
 
 #graphics-page main {
-padding-top: 140px;
-padding-bottom: 90px;
+    padding-top: 140px;
+    padding-bottom: 90px;
 }
 
 /* --- About Page --- */
 /* Hero */
-#about-me
-p {
+#about-me p {
     text-align: left;
 }
 
-#about-me
-h1 {
+#about-me h1 {
     text-align: center;
 }
 
-#skills 
-h4 {
+#skills h4 {
     text-align: left;
 }
 
-#about-me .padding { /*Text padding */
+#about-me .padding {
+    /*Text padding */
     text-align: left;
     padding: 30px 15px;
 }
 
 #about-me main {
     padding-top: 140px;
-padding-bottom: 40px;
+    padding-bottom: 40px;
 }
 
 /* --- Contact --- */
@@ -375,8 +375,7 @@ padding-bottom: 40px;
     text-align: center;
 }
 
-#contact-page
-footer {
+#contact-page footer {
     width: 100%;
     display: inline-block;
     background-color: #EAEBEF;
@@ -388,7 +387,7 @@ footer {
 /* --- Sparki Project --- */
 
 #sparki-main .container {
-padding: 20px 15px;
+    padding: 20px 15px;
 }
 
 #sparki h1 {
@@ -410,7 +409,7 @@ q {
 #issues .img {
     display: grid;
     grid-template-columns: repeat(auto-fit, 50%);
-    justify-content: center;  
+    justify-content: center;
 }
 
 #sparki .padding {
@@ -419,6 +418,6 @@ q {
 }
 
 /* --- Connect Project --- */
- #connect img {
+#connect img {
     display: block;
- }
+}
