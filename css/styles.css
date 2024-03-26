@@ -82,6 +82,9 @@ img {
     max-width: 50px;
     text-align: center;
 }
+.button-icon {
+    max-width: 20px;
+}
 
 /*  ---------- Links ----------*/
 .link {
@@ -226,7 +229,7 @@ main {
 .row {
     width: 100%;
     display: inline-block;
-    margin: 25px 0;
+    margin: 0px 0;
 }
 
 .center {
@@ -235,40 +238,34 @@ main {
     align-items: center;
 }
 
+.padding-quote {
+    padding: 0 26px;
+    margin-top: 40px;
+}
+.padding-list {
+    padding: 15px;
+}
+
+.padding-button {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.padding-img {
+    padding: 20px 0px;
+}
+
 .button.row {
     margin: 10px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* --- Index Page --- */
-/* Hero */
-#hero h1,
-h2,
-p {
-    text-align: center;
-}
-
-#hero {
-    background-image: url("../img/homepage/png/introduction-background-600px.png");
-    padding: 80px 0;
-    display: inline-block;
-    width: 100%;
-}
-
-/* --- Projects --- */
-#project h1,
-h3,
-h4,
-p {
-    text-align: center;
-}
-
-#project .container {
-    margin: 20px 0;
-}
-
-#project .row {
-    margin: 40px 0;
+/* Text spacing */
+.center-text {
+text-align: center;
 }
 
 /* --- Footer --- */
@@ -277,20 +274,151 @@ footer {
     display: inline-block;
     background-color: #F2F3F7;
     list-style-type: none;
-    padding: 80px 0;
+    padding: 40px 0;
+    text-align: center;
 }
 
 #contact h1 {
     text-align: center;
 }
 
+/* --- Index Page --- */
+/* Hero */
+#hero h1,
+#hero h2,
+#hero p {
+    text-align: center;
+}
+
+#hero {
+    background-image: url("../img/contact/contact-background-600px.png");
+    background-size: cover;
+    padding: 60px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Projects */
+#project h1,
+#project h3,
+#project h4,
+#project p {
+    text-align: center;
+}
+
+#project .container {
+    margin: 25px 0;
+}
+
+#project .row {
+    margin: 40px 0;
+}
+
+.line-height-1 {
+    line-height: 20%;
+}
+
+.project-spacing {
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+/* --- Graphics --- */
+#graphics {
+    text-align: center;
+}
+
+#graphics-page main {
+padding-top: 140px;
+padding-bottom: 90px;
+}
+
 /* --- About Page --- */
 /* Hero */
 #about-me
-h1,
-h2,
-h3,
-h4,
 p {
     text-align: left;
 }
+
+#about-me
+h1 {
+    text-align: center;
+}
+
+#skills 
+h4 {
+    text-align: left;
+}
+
+#about-me .padding { /*Text padding */
+    text-align: left;
+    padding: 30px 15px;
+}
+
+#about-me main {
+    padding-top: 140px;
+padding-bottom: 40px;
+}
+
+/* --- Contact --- */
+
+#lets-connect {
+    background-image: url("../img/contact/contact-background-600px.png");
+    background-size: cover;
+    padding: 80px 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+#contact h1 {
+    text-align: center;
+}
+
+#contact-page
+footer {
+    width: 100%;
+    display: inline-block;
+    background-color: #EAEBEF;
+    list-style-type: none;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* --- Sparki Project --- */
+
+#sparki-main .container {
+padding: 20px 15px;
+}
+
+#sparki h1 {
+    font-size: 1.8em;
+}
+
+q {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+#explore,
+#persona,
+#task,
+#wireframe {
+    text-align: center;
+}
+
+#issues .img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 50%);
+    justify-content: center;  
+}
+
+#sparki .padding {
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* --- Connect Project --- */
+ #connect img {
+    display: block;
+ }

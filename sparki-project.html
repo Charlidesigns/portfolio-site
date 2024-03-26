@@ -23,8 +23,8 @@
 </head>
 
 <body id="sparki">
-    <header><!-- Section / Orange-->
-        <div><!-- Container / Yellow-->
+    <header id="header"><!-- Section / Orange-->
+        <div class="container"><!-- Container / Yellow-->
             <a href="index.html">
                 <svg width="30" height="30" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="80" height="80" rx="20" fill="white" />
@@ -36,11 +36,12 @@
 
             <nav>
                 <ul>
-                    <li><a href="index.html" class="button navigation">Projects</a></li>
-                    <li><a href="graphics.html" class="button navigation">Graphics</a></li>
-                    <li><a href="about.html" class="button navigation">About</a></li>
-                    <li><a href="contact.html" class="button navigation">Contact</a></li>
-                    <li><a href="https://www.linkedin.com/in/charitysun/">
+                    <li><a href="index.html">Projects</a></li>
+                    <li><a href="graphics.html">Graphics</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <!-- Navigation LinkedIn icon-->
+                    <!-- <li><a href="https://www.linkedin.com/in/charitysun/">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect width="30" height="30" rx="15" fill="white" />
@@ -48,16 +49,16 @@
                                     d="M9.568 11.144C9.088 11.144 8.69333 11.0053 8.384 10.728C8.08533 10.44 7.936 10.088 7.936 9.672C7.936 9.24533 8.08533 8.89333 8.384 8.616C8.69333 8.328 9.088 8.184 9.568 8.184C10.0373 8.184 10.4213 8.328 10.72 8.616C11.0293 8.89333 11.184 9.24533 11.184 9.672C11.184 10.088 11.0293 10.44 10.72 10.728C10.4213 11.0053 10.0373 11.144 9.568 11.144ZM10.928 12.072V21H8.192V12.072H10.928ZM18.4507 11.976C19.4961 11.976 20.3281 12.3173 20.9468 13C21.5761 13.672 21.8908 14.6 21.8908 15.784V21H19.1708V16.152C19.1708 15.5547 19.0161 15.0907 18.7067 14.76C18.3974 14.4293 17.9814 14.264 17.4587 14.264C16.9361 14.264 16.5201 14.4293 16.2108 14.76C15.9014 15.0907 15.7467 15.5547 15.7467 16.152V21H13.0107V12.072H15.7467V13.256C16.0241 12.8613 16.3974 12.552 16.8667 12.328C17.3361 12.0933 17.8641 11.976 18.4507 11.976Z"
                                     fill="#FB635C" />
                             </svg>
-                        </a></li>
+                        </a></li> -->
                 </ul>
             </nav>
 
         </div>
     </header>
 
-    <main>
+    <main id="sparki-main">
         <div><!-- Section / Orange-->
-            <div id="hero"><!-- Container / Yellow-->
+            <div id="sparki-hero"><!-- Container / Yellow-->
                 <picture>
                     <source srcset="img/projects/project-sparki/JPG/600px/hero-600px.jpg" media="(max-width:767px)">
                     <img src="img/projects/project-sparki/JPG/1200px/hero-1200px.jpg" alt="Sparky case study cover">
@@ -66,13 +67,13 @@
         </div>
 
         <div><!-- Section / Orange-->
-            <div id="problem"><!-- Container / Yellow-->
-                <h2>Problem Statement</h2>
+            <div id="problem" class="container center-text"><!-- Container / Yellow-->
+                <h1>Problem Statement</h1>
                 <p>How might we design a mobile app that empowers people to learn new vocabulary?</p>
             </div>
 
-            <div id="goal"><!-- Container / Yellow-->
-                <h2>Objectives & Goals</h2>
+            <div id="goal" class="container"><!-- Container / Yellow-->
+                <h1>Objectives & Goals</h1>
                 <h3>The Challenge</h3>
                 <p>
                     Do you keep coming across new words in your workplace or general life? My challenge in this
@@ -109,8 +110,8 @@
         </div>
 
         <div><!-- Section / Orange-->
-            <div id="phases"><!-- Container / Yellow-->
-                <h2>Project Phases</h2>
+            <div id="phases" class="container"><!-- Container / Yellow-->
+                <h1 class="center">Project Phases</h1>
                 <picture>
                     <source srcset="img/projects/project-sparki/PNG/600px/project-phases-600px.png"
                         media="(max-width:767px)">
@@ -119,82 +120,106 @@
                 </picture>
             </div>
 
-            <div id="sections"><!-- Container / Yellow-->
-                <div><!-- Row / Green-->
+            <div id="sections" class="container"><!-- Container / Yellow-->
+                <div class="row"><!-- Row / Green-->
                     <div><!-- Teal / Column-->
-                        <h3>Research Phase</h3>
-                        <ul>
-                            <li>
-                                Competitive Research
-                            </li>
-                            <li>
-                                SWOT Analysis
-                            </li>
-                            <li>
-                                User Interviews
-                            </li>
-                            <li>
-                                Affinity Maps
-                            </li>
-                        </ul>
-                        <a href="#research" class="button text">Jump to Section
-                            <img src="img/projects/project-sparki/SVG/arrow-icon.svg" alt="Arrow icon">
+                        <h3 class="center">Research Phase</h3>
 
-                        </a>
+                        <div class="center">
+                            <ul>
+                                <li>
+                                    Competitive Research
+                                </li>
+                                <li>
+                                    SWOT Analysis
+                                </li>
+                                <li>
+                                    User Interviews
+                                </li>
+                                <li>
+                                    Affinity Maps
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="center">
+                            <a href="#research" class="button text">Jump to Section
+                                <span>
+                                    <img class="button-icon" src="img/projects/project-sparki/SVG/arrow-icon.svg"
+                                        alt="Arrow icon">
+                                </span>
+                            </a>
+                        </div>
+
                     </div>
 
                     <div><!-- Teal / Column-->
-                        <h3>Building Empathy</h3>
-                        <ul>
-                            <li>
-                                User Persona
-                            </li>
-                            <li>
-                                User Stories
-                            </li>
-                            <li>
-                                Task Analysis
-                            </li>
-                            <li>
-                                User Flows
-                            </li>
-                        </ul>
-                        <a href="#empathy" class="button text">Jump to Section
-                            <img src="img/projects/project-sparki/SVG/arrow-icon.svg" alt="Arrow icon">
+                        <h3 class="center">Building Empathy</h3>
 
-                        </a>
+                        <div class="center">
+                            <ul>
+                                <li>
+                                    User Persona
+                                </li>
+                                <li>
+                                    User Stories
+                                </li>
+                                <li>
+                                    Task Analysis
+                                </li>
+                                <li>
+                                    User Flows
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="center">
+                            <a class="button text" href="#empathy">Jump to Section
+                                <img class="button-icon" src="img/projects/project-sparki/SVG/arrow-icon.svg"
+                                    alt="Arrow icon">
+
+                            </a>
+                        </div>
+
                     </div>
 
                     <div><!-- Teal / Column-->
-                        <h3>Design and Testing</h3>
-                        <ul>
-                            <li>
-                                Paper Wireframes
-                            </li>
-                            <li>
-                                Prototyping in Figma
-                            </li>
-                            <li>
-                                Usability Testing
-                            </li>
-                            <li>
-                                Implementing Changes
-                            </li>
-                        </ul>
-                        <a href="#design" class="button text">Jump to Section
-                            <img src="img/projects/project-sparki/SVG/arrow-icon.svg" alt="Arrow icon">
+                        <h3 class="center">Design and Testing</h3>
 
-                        </a>
+                        <div class="center">
+                            <ul>
+                                <li>
+                                    Paper Wireframes
+                                </li>
+                                <li>
+                                    Prototyping in Figma
+                                </li>
+                                <li>
+                                    Usability Testing
+                                </li>
+                                <li>
+                                    Implementing Changes
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="center">
+                            <a href="#design" class="button text">Jump to Section
+                                <img class="button-icon" src="img/projects/project-sparki/SVG/arrow-icon.svg"
+                                    alt="Arrow icon">
+
+                            </a>
+                        </div>
+
                     </div>
-
                 </div>
             </div>
         </div>
 
         <div><!-- Section / Orange-->
-            <div id="discover"><!-- Container / Yellow-->
+            <div id="discover" class="container"><!-- Container / Yellow-->
                 <a id="research">
-                    <h2>Phase 1 - Discover</h2>
+                    <h1>Phase 1 - Discover</h1>
                 </a>
                 <h3>Exploratory Research | User Interviews | Competitive Research</h3>
                 <p>
@@ -226,20 +251,22 @@
                     clear idea of the business/project goals and objectives. For this project, I communicated with my
                     tutor to understand the project details and goals.
                 </p>
-
-                <q>
-                    When you learn a new word it’s hard to retain them over weeks, you have to go back and remember how
-                    to spell and pronounce them. Having a review every few days would help keep me in the loop!
-                </q>
-                <p>
-                    - Vansh, College Student
-                </p>
+                <div class="padding-quote">
+                    <q>
+                        When you learn a new word it’s hard to retain them over weeks, you have to go back and remember
+                        how
+                        to spell and pronounce them. Having a review every few days would help keep me in the loop!
+                    </q>
+                    <p>
+                        - Vansh, College Student
+                    </p>
+                </div>
             </div>
         </div>
 
         <div><!-- Section / Orange-->
-            <div id="explore"><!-- Container / Yellow-->
-                <h2>Exploratory Research</h2>
+            <div id="explore" class="container"><!-- Container / Yellow-->
+                <h1>Exploratory Research</h1>
                 <p>
                     During the research stage, I interviewed several participants to understand how potential customers
                     were currently learning new words and what challenges they faced. After the interviews, I analyzed
@@ -253,14 +280,14 @@
                         alt="Interview participants">
                 </picture>
 
-                <h2>Analysis of the Interviews</h2>
+                <h1>Analysis of the Interviews</h1>
                 <picture>
                     <source srcset="img/projects/project-sparki/PNG/600px/interview-analysis-600px.png"
                         media="(max-width:767px)">
                     <img src="img/projects/project-sparki/PNG/1200px/interview-analysis-1200px.png" alt="Analysis map">
                 </picture>
 
-                <h2>Competitor Research</h2>
+                <h1 class="padding">Competitor Research</h1>
                 <h3>Duolingo | Memrise | Rosetta Stone</h3>
                 <picture>
                     <source srcset="img/projects/project-sparki/JPG/600px/competitor-research-600px.jpg"
@@ -272,9 +299,9 @@
         </div>
 
         <div><!-- Section / Orange-->
-            <div id="empathize"><!-- Container / Yellow-->
+            <div id="empathize" class="container"><!-- Container / Yellow-->
                 <a id="empathy">
-                    <h2>Phase 2- Define</h2>
+                    <h1>Phase 2- Define</h1>
                 </a>
                 <h3>User Personas | Task Analysis | User Flows</h3>
                 <h3>Persona</h3>
@@ -292,8 +319,8 @@
         </div>
 
         <div><!-- Section / Orange-->
-            <div id="persona"><!-- Container / Yellow-->
-                <h2>Sparki’s Persona</h2>
+            <div id="persona" class="container"><!-- Container / Yellow-->
+                <h1>Sparki’s Persona</h1>
                 <h3>
                     User stories | Problem statement | Hypothesis statement
                 </h3>
@@ -309,8 +336,8 @@
         </div>
 
         <div><!-- Section / Orange-->
-            <div id="ideate"><!-- Container / Yellow-->
-                <h2>Phase 3 - Ideate 💡</h2>
+            <div id="ideate" class="container"><!-- Container / Yellow-->
+                <h1>Phase 3 - Ideate 💡</h1>
                 <h3>
                     User Personas | Task Analysis | User Flows
                 </h3>
@@ -322,7 +349,7 @@
                     the user to accomplish their tasks.
                 </p>
 
-                <h2>Task analyses & user flows</h2>
+                <h1 id="task" class="padding">Task analyses & user flows</h1>
                 <picture>
                     <source srcset="img/projects/project-sparki/PNG/600px/task-flow1-600px.png"
                         media="(max-width:767px)">
@@ -337,9 +364,9 @@
         </div>
 
         <div><!-- Section / Orange-->
-            <div id="prototyping"><!-- Container / Yellow-->
+            <div id="prototyping" class="container"><!-- Container / Yellow-->
                 <a id="design">
-                    <h2>Phase 4 - Design and Test</h2>
+                    <h1>Phase 4 - Design and Test</h1>
                 </a>
                 <h3>
                     Paper Wireframes | Low and Mid-Fidelity Prototypes
@@ -352,93 +379,95 @@
                     Figma.
                 </p>
 
-                <h2>Wireframes</h2>
-                <p>Hand-drawn paper wireframes</p>
-                <picture>
-                    <source srcset="img/projects/project-sparki/PNG/600px/wireframe1-600px.png"
-                        media="(max-width:767px)">
-                    <img src="img/projects/project-sparki/PNG/1200px/wireframe1-1200px.png" alt="Paper wireframe 1">
-                </picture>
+                <div id="wireframe">
+                    <h1 class="padding">Wireframes</h1>
+                    <p>Hand-drawn paper wireframes</p>
+                    <picture>
+                        <source srcset="img/projects/project-sparki/PNG/600px/wireframe1-600px.png"
+                            media="(max-width:767px)">
+                        <img src="img/projects/project-sparki/PNG/1200px/wireframe1-1200px.png" alt="Paper wireframe 1">
+                    </picture>
 
-                <picture>
-                    <source srcset="img/projects/project-sparki/PNG/600px/wireframe2-600px.png"
-                        media="(max-width:767px)">
-                    <img src="img/projects/project-sparki/PNG/1200px/wireframe2-1200px.png" alt="Paper wireframe 2">
-                </picture>
+                    <picture>
+                        <source srcset="img/projects/project-sparki/PNG/600px/wireframe2-600px.png"
+                            media="(max-width:767px)">
+                        <img src="img/projects/project-sparki/PNG/1200px/wireframe2-1200px.png" alt="Paper wireframe 2">
+                    </picture>
 
-                <picture>
-                    <source srcset="img/projects/project-sparki/PNG/600px/wireframe3-600px.png"
-                        media="(max-width:767px)">
-                    <img src="img/projects/project-sparki/PNG/1200px/wireframe3-1200px.png" alt="Paper wireframe 3">
-                </picture>
+                    <picture>
+                        <source srcset="img/projects/project-sparki/PNG/600px/wireframe3-600px.png"
+                            media="(max-width:767px)">
+                        <img src="img/projects/project-sparki/PNG/1200px/wireframe3-1200px.png" alt="Paper wireframe 3">
+                    </picture>
 
-                <picture>
-                    <source srcset="img/projects/project-sparki/PNG/600px/wireframe4-600px.png"
-                        media="(max-width:767px)">
-                    <img src="img/projects/project-sparki/PNG/1200px/wireframe4-1200px.png" alt="Paper wireframe 4">
-                </picture>
+                    <picture>
+                        <source srcset="img/projects/project-sparki/PNG/600px/wireframe4-600px.png"
+                            media="(max-width:767px)">
+                        <img src="img/projects/project-sparki/PNG/1200px/wireframe4-1200px.png" alt="Paper wireframe 4">
+                    </picture>
 
-                <picture>
-                    <source srcset="img/projects/project-sparki/PNG/600px/wireframe5-600px.png"
-                        media="(max-width:767px)">
-                    <img src="img/projects/project-sparki/PNG/1200px/wireframe5-1200px.png" alt="Paper wireframe 5">
-                </picture>
+                    <picture>
+                        <source srcset="img/projects/project-sparki/PNG/600px/wireframe5-600px.png"
+                            media="(max-width:767px)">
+                        <img src="img/projects/project-sparki/PNG/1200px/wireframe5-1200px.png" alt="Paper wireframe 5">
+                    </picture>
 
-                <picture>
-                    <source srcset="img/projects/project-sparki/PNG/600px/wireframe6-600px.png"
-                        media="(max-width:767px)">
-                    <img src="img/projects/project-sparki/PNG/1200px/wireframe6-1200px.png" alt="Paper wireframe 6">
-                </picture>
+                    <picture>
+                        <source srcset="img/projects/project-sparki/PNG/600px/wireframe6-600px.png"
+                            media="(max-width:767px)">
+                        <img src="img/projects/project-sparki/PNG/1200px/wireframe6-1200px.png" alt="Paper wireframe 6">
+                    </picture>
 
-                <h2>Wireframes</h2>
-                <p>Low-fidelity wireframes built using Figma</p>
-                <picture>
-                    <source srcset="img/projects/project-sparki/PNG/600px/wireframe7-600px.png"
-                        media="(max-width:767px)">
-                    <img src="img/projects/project-sparki/PNG/1200px/wireframe7-1200px.png"
-                        alt="Low-fidelity wireframe 7">
-                </picture>
+                    <h1>Wireframes</h1>
+                    <p>Low-fidelity wireframes built using Figma</p>
+                    <picture>
+                        <source srcset="img/projects/project-sparki/PNG/600px/wireframe7-600px.png"
+                            media="(max-width:767px)">
+                        <img src="img/projects/project-sparki/PNG/1200px/wireframe7-1200px.png"
+                            alt="Low-fidelity wireframe 7">
+                    </picture>
 
-                <picture>
-                    <source srcset="img/projects/project-sparki/PNG/600px/wireframe8-600px.png"
-                        media="(max-width:767px)">
-                    <img src="img/projects/project-sparki/PNG/1200px/wireframe8-1200px.png"
-                        alt="Low-fidelity wireframe 8">
-                </picture>
+                    <picture>
+                        <source srcset="img/projects/project-sparki/PNG/600px/wireframe8-600px.png"
+                            media="(max-width:767px)">
+                        <img src="img/projects/project-sparki/PNG/1200px/wireframe8-1200px.png"
+                            alt="Low-fidelity wireframe 8">
+                    </picture>
 
-                <picture>
-                    <source srcset="img/projects/project-sparki/PNG/600px/wireframe9-600px.png"
-                        media="(max-width:767px)">
-                    <img src="img/projects/project-sparki/PNG/1200px/wireframe9-1200px.png"
-                        alt="Low-fidelity wireframe 9">
-                </picture>
+                    <picture>
+                        <source srcset="img/projects/project-sparki/PNG/600px/wireframe9-600px.png"
+                            media="(max-width:767px)">
+                        <img src="img/projects/project-sparki/PNG/1200px/wireframe9-1200px.png"
+                            alt="Low-fidelity wireframe 9">
+                    </picture>
 
-                <picture>
-                    <source srcset="img/projects/project-sparki/PNG/600px/wireframe10-600px.png"
-                        media="(max-width:767px)">
-                    <img src="img/projects/project-sparki/PNG/1200px/wireframe10-1200px.png"
-                        alt="Low-fidelity wireframe 10">
-                </picture>
+                    <picture>
+                        <source srcset="img/projects/project-sparki/PNG/600px/wireframe10-600px.png"
+                            media="(max-width:767px)">
+                        <img src="img/projects/project-sparki/PNG/1200px/wireframe10-1200px.png"
+                            alt="Low-fidelity wireframe 10">
+                    </picture>
 
-                <picture>
-                    <source srcset="img/projects/project-sparki/PNG/600px/wireframe11-600px.png"
-                        media="(max-width:767px)">
-                    <img src="img/projects/project-sparki/PNG/1200px/wireframe11-1200px.png"
-                        alt="Low-fidelity wireframe 11">
-                </picture>
+                    <picture>
+                        <source srcset="img/projects/project-sparki/PNG/600px/wireframe11-600px.png"
+                            media="(max-width:767px)">
+                        <img src="img/projects/project-sparki/PNG/1200px/wireframe11-1200px.png"
+                            alt="Low-fidelity wireframe 11">
+                    </picture>
 
-                <picture>
-                    <source srcset="img/projects/project-sparki/PNG/600px/wireframe12-600px.png"
-                        media="(max-width:767px)">
-                    <img src="img/projects/project-sparki/PNG/1200px/wireframe12-1200px.png"
-                        alt="Low-fidelity wireframe 12">
-                </picture>
+                    <picture>
+                        <source srcset="img/projects/project-sparki/PNG/600px/wireframe12-600px.png"
+                            media="(max-width:767px)">
+                        <img src="img/projects/project-sparki/PNG/1200px/wireframe12-1200px.png"
+                            alt="Low-fidelity wireframe 12">
+                    </picture>
+                </div>
             </div>
         </div>
 
         <div><!-- Section / Orange-->
-            <div id="testing"><!-- Container / Yellow-->
-                <h2>Phase 4 - Testing the Design</h2>
+            <div id="testing" class="container"><!-- Container / Yellow-->
+                <h1>Phase 4 - Testing the Design</h1>
                 <h3>Usability Testing | Usability Report</h3>
                 <p>
                     The next stage was to test my first iteration with potential customers to check the usability and
@@ -448,14 +477,14 @@
                     observations and comments to analyze later.
                 </p>
 
-                <h2>Usability Test Plan</h2>
+                <h1 class="center-text padding">Usability Test Plan</h1>
                 <picture>
                     <source srcset="img/projects/project-sparki/PNG/600px/test-plan-600px.png"
                         media="(max-width:767px)">
                     <img src="img/projects/project-sparki/PNG/1200px/test-plan-1200px.png" alt="Usability test plan">
                 </picture>
 
-                <h2>Usability Test Plan</h2>
+                <h1 class="padding">Usability Test Script</h1>
                 <p>
                     Hi,____! Thank you for taking the time to help me test out the app I am working on. My name is
                     Charity and I will first walk you through today’s session.
@@ -467,14 +496,14 @@
                     we go along, please feel free to ask them.
                 </p>
 
-                <h2>Usability Testing</h2>
+                <h1 class="center-text padding">Usability Testing</h1>
                 <picture>
                     <source srcset="img/projects/project-sparki/PNG/600px/test-results-600px.png"
                         media="(max-width:767px)">
                     <img src="img/projects/project-sparki/PNG/1200px/test-results-1200px.png" alt="Usability testing">
                 </picture>
 
-                <h2>Usability Test Report</h2>
+                <h1 class="center-text padding">Usability Test Report</h1>
                 <figure>
                     <picture>
                         <source srcset="img/projects/project-sparki/PNG/600px/test-report-600px.png"
@@ -486,7 +515,7 @@
                         tests</figcaption>
                 </figure>
 
-                <h3>Jakob Nielsen’s rating scale</h3>
+                <h3 class="center-text padding">Jakob Nielsen’s rating scale</h3>
                 <p>
                     0 = I don’t agree that this is a usability problem at all
                     <br>1 = Cosmetic problem only: need not be fixed unless extra time is available on project
@@ -498,18 +527,18 @@
         </div>
 
         <div><!-- Section / Orange-->
-            <div id="analyzing"><!-- Container / Yellow-->
-                <h2>Analyzing and Implementing Changes</h2>
+            <div id="analyzing" class="container"><!-- Container / Yellow-->
+                <h1>Analyzing and Implementing Changes</h1>
                 <p>
                     After conducting usability tests on my prototypes, I prioritized the usability issues found during
                     the tests and implemented the new changes into my prototypes.
                 </p>
 
-                <div><!-- Green / Row-->
-                    <div><!-- Teal / Row-->
+                <div class="row"><!-- Green / Row-->
+                    <div><!-- Teal / Column-->
 
-                        <div><!-- Green / Row-->
-                            <div><!-- Teal / Row-->
+                        <div class="row"><!-- Green / Row-->
+                            <div><!-- Teal / Column-->
                                 <h3>Viewing Quizzes</h3>
                                 <h4>
                                     Problem
@@ -519,7 +548,7 @@
                                 </p>
                             </div>
 
-                            <div><!-- Teal / Row-->
+                            <div><!-- Teal / Column-->
                                 <p>Steps to find a quiz</p>
                                 <ol>
                                     <li>Navigate to the folder tab</li>
@@ -530,7 +559,7 @@
 
                     </div>
 
-                    <div><!-- Teal / Row-->
+                    <div><!-- Teal / Column-->
                         <picture>
                             <source srcset="img/projects/project-sparki/JPG/600px/issue1-600px.jpg"
                                 media="(max-width:767px)">
@@ -539,22 +568,22 @@
                     </div>
                 </div>
 
-                <div><!-- Green / Row-->
-                    <div><!-- Teal / Row-->
+                <div><!-- Teal / Column-->
+                    <h4>Solution</h4>
+                    <ol>
+                        <li>Allow users to view quizzes first</li>
+                        <li>Make the folder view a second option</li>
+                        <li>The icon was changed</li>
+                    </ol>
+                </div>
+
+                <div class="row"><!-- Green / Row-->
+                    <div><!-- Teal / Column-->
                         <picture>
                             <source srcset="img/projects/project-sparki/JPG/600px/issue2-600px.jpg"
                                 media="(max-width:767px)">
                             <img src="img/projects/project-sparki/JPG/1200px/issue2-1200px.jpg" alt="Problem 2">
                         </picture>
-                    </div>
-
-                    <div><!-- Teal / Row-->
-                        <h4>Solution</h4>
-                        <ol>
-                            <li>Allow users to view quizzes first</li>
-                            <li>Make the folder view a second option</li>
-                            <li>The icon was changed</li>
-                        </ol>
                     </div>
                 </div>
 
@@ -562,13 +591,13 @@
         </div>
 
         <div><!-- Section / Orange-->
-            <div id="issues"><!-- Container / Yellow-->
+            <div id="issues" class="container"><!-- Container / Yellow-->
 
-                <div><!-- Green / Row-->
-                    <div><!-- Teal / Row-->
+                <div class="row"><!-- Green / Row-->
+                    <div><!-- Teal / Column-->
 
-                        <div><!-- Green / Row-->
-                            <div><!-- Teal / Row-->
+                        <div class="row"><!-- Green / Row-->
+                            <div><!-- Teal / Column-->
                                 <h3>Make Quiz Button</h3>
                                 <h4>
                                     Problem
@@ -579,7 +608,7 @@
                                 </p>
                             </div>
 
-                            <div><!-- Teal / Row-->
+                            <div><!-- Teal / Column-->
                                 <h4>
                                     Solution
                                 </h4>
@@ -591,7 +620,7 @@
 
                     </div>
 
-                    <div><!-- Teal / Row-->
+                    <div><!-- Teal / Column-->
                         <picture>
                             <source srcset="img/projects/project-sparki/JPG/600px/issue3-600px.jpg"
                                 media="(max-width:767px)">
@@ -601,23 +630,23 @@
 
                 </div>
 
-                <div><!-- Green / Row-->
-                    <div><!-- Teal / Row-->
-                        <picture>
+                <div><!-- Teal / Column-->
+                    <h4>
+                        Developing the new quiz feature
+                    </h4>
+                    <p>
+                        Making new quizzes is an important feature of the app. I added a new tab so users could
+                        quickly and easily add new quizzes from anywhere in the app.
+                    </p>
+                </div>
+
+                <div class="row img"><!-- Green / Row-->
+                    <div><!-- Teal / Column-->
+                        <picture class="center">
                             <source srcset="img/projects/project-sparki/JPG/600px/issue4-600px.jpg"
                                 media="(max-width:767px)">
                             <img src="img/projects/project-sparki/JPG/1200px/issue4-1200px.jpg" alt="Problem 4">
                         </picture>
-                    </div>
-
-                    <div><!-- Teal / Row-->
-                         <h4>
-                            Developing the new quiz feature
-                         </h4>
-                        <p>
-                            Making new quizzes is an important feature of the app. I added a new tab so users could
-                            quickly and easily add new quizzes from anywhere in the app.
-                        </p>
                     </div>
                 </div>
 
@@ -625,13 +654,13 @@
         </div>
 
         <div><!-- Section / Orange-->
-            <div id="takeaways"><!-- Container / Yellow-->
-                <h2>Final Thoughts</h2>
+            <div id="takeaways" class="container"><!-- Container / Yellow-->
+                <h1>Final Thoughts</h1>
                 <p>
                     Throughout this project, I learn many things about my target audience, analyzing information, and
                     prototyping a solution. Here are a few key takeaways I learned throughout the process.
                 </p>
-                <ul>
+                <ul class="padding-list">
                     <li>
                         Feedback at an early stage is vital to keeping my design on track.
                     </li>
@@ -662,57 +691,61 @@
                         subscriptions and paid upgrades to the app.
                     </li>
                 </ul>
-                <a href="index.html" class="button">Return to case studies</a>
+
+                <div class="center padding-button">
+                    <a href="index.html" class="button">Return to case studies</a>
+                </div>
             </div>
         </div>
 
     </main>
 
-    <footer><!-- Section / Orange-->
-        <div id="contact"><!-- Container / Yellow-->
-            <h2>Get in Touch</h2>
-            <a href="https://www.linkedin.com/in/charitysun/" target="_blank"><!-- Link / LinkedIn Icon-->
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g filter="url(#filter0_d_199_1112)">
-                        <rect x="4" width="40" height="40" rx="20" fill="white" shape-rendering="crispEdges" />
-                        <path
-                            d="M17.2225 14.68C16.6225 14.68 16.1292 14.5067 15.7425 14.16C15.3692 13.8 15.1825 13.36 15.1825 12.84C15.1825 12.3067 15.3692 11.8667 15.7425 11.52C16.1292 11.16 16.6225 10.98 17.2225 10.98C17.8092 10.98 18.2892 11.16 18.6625 11.52C19.0492 11.8667 19.2425 12.3067 19.2425 12.84C19.2425 13.36 19.0492 13.8 18.6625 14.16C18.2892 14.5067 17.8092 14.68 17.2225 14.68ZM18.9225 15.84V27H15.5025V15.84H18.9225ZM28.3009 15.72C29.6076 15.72 30.6476 16.1467 31.4209 17C32.2076 17.84 32.6009 19 32.6009 20.48V27H29.2009V20.94C29.2009 20.1933 29.0076 19.6133 28.6209 19.2C28.2343 18.7867 27.7143 18.58 27.0609 18.58C26.4076 18.58 25.8876 18.7867 25.5009 19.2C25.1143 19.6133 24.9209 20.1933 24.9209 20.94V27H21.5009V15.84H24.9209V17.32C25.2676 16.8267 25.7343 16.44 26.3209 16.16C26.9076 15.8667 27.5676 15.72 28.3009 15.72Z"
-                            fill="#5CA5FB" />
-                    </g>
-                    <defs>
-                        <filter id="filter0_d_199_1112" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse"
-                            color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                            <feColorMatrix in="SourceAlpha" type="matrix"
-                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                            <feOffset dy="4" />
-                            <feGaussianBlur stdDeviation="2" />
-                            <feComposite in2="hardAlpha" operator="out" />
-                            <feColorMatrix type="matrix"
-                                values="0 0 0 0 0.984314 0 0 0 0 0.388235 0 0 0 0 0.360784 0 0 0 0.25 0" />
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_199_1112" />
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_199_1112"
-                                result="shape" />
-                        </filter>
-                    </defs>
-                </svg>
-            </a>
 
-            <p>I would love to collaborate to enhance our customer’s experience. If you are interested in working
+    <footer id="contact"><!-- Section / Orange-->
+        <div class="container"><!-- Container / Yellow-->
+            <h1 class="acent-font">Get in Touch</h1>
+            <div class="center"><!-- Container / Center-->
+                <a href="https://www.linkedin.com/in/charitysun/" target="_blank"><!-- Link / LinkedIn Icon-->
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_199_1112)">
+                            <rect x="4" width="40" height="40" rx="20" fill="white" shape-rendering="crispEdges" />
+                            <path
+                                d="M17.2225 14.68C16.6225 14.68 16.1292 14.5067 15.7425 14.16C15.3692 13.8 15.1825 13.36 15.1825 12.84C15.1825 12.3067 15.3692 11.8667 15.7425 11.52C16.1292 11.16 16.6225 10.98 17.2225 10.98C17.8092 10.98 18.2892 11.16 18.6625 11.52C19.0492 11.8667 19.2425 12.3067 19.2425 12.84C19.2425 13.36 19.0492 13.8 18.6625 14.16C18.2892 14.5067 17.8092 14.68 17.2225 14.68ZM18.9225 15.84V27H15.5025V15.84H18.9225ZM28.3009 15.72C29.6076 15.72 30.6476 16.1467 31.4209 17C32.2076 17.84 32.6009 19 32.6009 20.48V27H29.2009V20.94C29.2009 20.1933 29.0076 19.6133 28.6209 19.2C28.2343 18.7867 27.7143 18.58 27.0609 18.58C26.4076 18.58 25.8876 18.7867 25.5009 19.2C25.1143 19.6133 24.9209 20.1933 24.9209 20.94V27H21.5009V15.84H24.9209V17.32C25.2676 16.8267 25.7343 16.44 26.3209 16.16C26.9076 15.8667 27.5676 15.72 28.3009 15.72Z"
+                                fill="#5CA5FB" />
+                        </g>
+                        <defs>
+                            <filter id="filter0_d_199_1112" x="0" y="0" width="48" height="48"
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feOffset dy="4" />
+                                <feGaussianBlur stdDeviation="2" />
+                                <feComposite in2="hardAlpha" operator="out" />
+                                <feColorMatrix type="matrix"
+                                    values="0 0 0 0 0.984314 0 0 0 0 0.388235 0 0 0 0 0.360784 0 0 0 0.25 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_199_1112" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_199_1112"
+                                    result="shape" />
+                            </filter>
+                        </defs>
+                    </svg>
+                </a>
+
+            </div>
+            <p class="red-font-2">I would love to collaborate to enhance our customer’s experience. If you are
+                interested in working
                 together or would like to connect more I would love to hear from you!
             </p>
 
-            <div>
-                <ul>
-                    <li><a href="mailto:charitydesignx@gmail.com">Email Me</a></li>
-                    <li><a href="files/charity-sun-resume.pdf" target="_blank">Resume</a></li>
-                </ul>
+            <div class="center padding-button">
+                <a href="mailto:charitydesignx@gmail.com" class="button row">Email Me</a>
+                <a href="files/charity-sun-resume.pdf" target="_blank" class="button row outlined">Resume</a>
             </div>
 
-            <p>&copy; 2024 Charity Sun</p>
+            <p class="red-font-2">&copy; 2024 Charity Sun</p>
 
         </div>
-
     </footer>
 </body>
 
