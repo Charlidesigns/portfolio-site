@@ -82,9 +82,15 @@ img {
     max-width: 50px;
     text-align: center;
 }
+.vertical-align {
+    display: inline-block;
+    vertical-align: middle;
+}
 
 .button-icon {
     max-width: 20px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /*  ---------- Links ----------*/
@@ -129,7 +135,7 @@ link:focus {
 .button.wide {
     display: flex;
     justify-content: center;
-    align-items: center;
+    width: 300px;
 }
 
 /* Outlined buttons */
@@ -177,6 +183,14 @@ header {
     -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     position: fixed;
     width: 100%;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 /* navigation */
@@ -237,7 +251,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
+
+.vertical-center {
+ vertical-align: middle;
+  }
 
 .padding-quote {
     padding: 0 26px;
@@ -249,8 +268,7 @@ main {
 }
 
 .padding-button {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 40px 0;
 }
 
 .padding-img {
@@ -258,6 +276,7 @@ main {
 }
 
 .button.row {
+    max-width: 200px;
     margin: 10px;
     text-align: center;
     display: flex;
@@ -295,10 +314,24 @@ footer {
 #hero {
     background-image: url("../img/contact/contact-background-600px.png");
     background-size: cover;
-    padding: 60px 0;
+    padding: 60px 10px 30px;
     display: inline-block;
     width: 100%;
 }
+
+#hero .padding {
+    margin: 5px 0 0px
+}
+
+#hero .container-padding {
+    margin: 30px 0;
+    display: grid;
+    grid-area: 100px 100px;
+}
+
+/* #hero .padding-button {
+padding: 0px 0;
+} */
 
 /* Projects */
 #project h1,
@@ -316,9 +349,6 @@ footer {
     margin: 40px 0;
 }
 
-.line-height-1 {
-    line-height: 20%;
-}
 
 .project-spacing {
     margin-top: 30px;
@@ -384,6 +414,14 @@ footer {
     text-align: center;
 }
 
+#lets-connect .padding-button{
+    margin: 20px 0;
+}
+
+#lets-connect .padding{
+margin: 60px 0;
+}
+
 /* --- Sparki Project --- */
 
 #sparki-main .container {
@@ -417,7 +455,80 @@ q {
     margin-top: 60px;
 }
 
+
 /* --- Connect Project --- */
 #connect img {
     display: block;
 }
+
+#research span {
+   display: inline-block;
+}
+
+
+/* ==============================
+Media Queries | Responsive Layout
+================================= */
+
+/* ---------- Medium devices (640px and larger) ---------- */
+@media only screen and (min-width:640px) {
+    header {
+        text-align: left;
+
+    }
+
+    nav {
+        width: auto;
+        float: right;
+    }
+
+    main {
+        /* Header top spacing */
+        padding-top: 61px;
+    }
+
+    #hero {
+        background-image: url("../img/contact/contact-background-1200px.png");
+        background-size: cover;
+        padding: 60px 50px 40px;
+        display: inline-block;
+        width: 100%;
+    }
+
+    #hero .padding-button {
+        margin: 30px 0;
+    }
+
+    .col-md-6 {
+        width: 50%;
+        padding: 0 0px;
+    }
+
+    .col-md-4 {
+        width: 33.33%;
+    }
+    
+    [class*="col-"] {
+        float: left;
+    }
+}
+
+
+
+/* ---------- Large devices (1024px or larger) ---------- */
+@media only screen and (min-width:1024px) {
+    .col-md-7 {
+        width: 60%;
+        padding: 0 0px;
+    }
+
+    .col-md-5 {
+        width: 40%;
+        padding: 0 0px;
+    }
+
+
+}
+
+/* ---------- X-large devices (1440px or larger) ---------- */
+@media only screen and (min-width:1440px) {}
