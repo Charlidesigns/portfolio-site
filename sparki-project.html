@@ -59,7 +59,7 @@
     <main id="sparki-main">
         <div><!-- Section / Orange-->
             <div id="sparki-hero"><!-- Container / Yellow-->
-                <picture>
+                <picture class="center">
                     <source srcset="img/projects/project-sparki/JPG/600px/hero-600px.jpg" media="(max-width:767px)">
                     <img src="img/projects/project-sparki/JPG/1200px/hero-1200px.jpg" alt="Sparky case study cover">
                 </picture>
@@ -526,130 +526,158 @@
             </div>
         </div>
 
-        <div><!-- Section / Orange-->
-            <div id="analyzing" class="container"><!-- Container / Yellow-->
-                <h1>Analyzing and Implementing Changes</h1>
-                <p>
-                    After conducting usability tests on my prototypes, I prioritized the usability issues found during
-                    the tests and implemented the new changes into my prototypes.
-                </p>
+        <div id="issues-solutions"><!-- Section / Orange-->
+            <div><!-- Section / Orange-->
 
-                <div class="row"><!-- Green / Row-->
-                    <div><!-- Teal / Column-->
-
-                        <div class="row"><!-- Green / Row-->
-                            <div class="col-md-6"><!-- Teal / Column-->
-                                <h3>Viewing Quizzes</h3>
-                                <h4>
-                                    Problem
-                                </h4>
-                                <p>
-                                    Users found it difficult to locate the quizzes
-                                </p>
-                            </div>
-
-                            <div class="col-md-6"><!-- Teal / Column-->
-                                <p>Steps to find a quiz</p>
-                                <ol class="padding-list">
-                                    <li>Navigate to the folder tab</li>
-                                    <li>Click the folder to find the quiz located in the folder</li>
-                                </ol>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div><!-- Teal / Column-->
-                        <picture>
-                            <source srcset="img/projects/project-sparki/JPG/600px/issue1-600px.jpg"
-                                media="(max-width:767px)">
-                            <img src="img/projects/project-sparki/JPG/1200px/issue1-1200px.jpg" alt="Problem 1">
-                        </picture>
-                    </div>
-                </div>
-
-                <div class="col-md-6"><!-- Teal / Column-->
-                    <h4>Solution</h4>
-                    <ol class="padding-list">
-                        <li>Allow users to view quizzes first</li>
-                        <li>Make the folder view a second option</li>
-                        <li>The icon was changed</li>
-                    </ol>
-                </div>
-
-                <div class="row"><!-- Green / Row-->
-                    <div><!-- Teal / Column-->
-                        <picture>
-                            <source srcset="img/projects/project-sparki/JPG/600px/issue2-600px.jpg"
-                                media="(max-width:767px)">
-                            <img src="img/projects/project-sparki/JPG/1200px/issue2-1200px.jpg" alt="Problem 2">
-                        </picture>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div><!-- Section / Orange-->
-            <div id="issues" class="container"><!-- Container / Yellow-->
-
-                <div class="row"><!-- Green / Row-->
-                    <div><!-- Teal / Column-->
-
-                        <div class="row"><!-- Green / Row-->
-                            <div class="col-md-6"><!-- Teal / Column-->
-                                <h3>Make Quiz Button</h3>
-                                <h4>
-                                    Problem
-                                </h4>
-                                <p>
-                                    Several testers found making a new quiz hard because the plus button
-                                    wasn’t clear enough.
-                                </p>
-                            </div>
-
-                            <div class="col-md-6"><!-- Teal / Column-->
-                                <h4>
-                                    Solution
-                                </h4>
-                                <p>
-                                    Change the icon button into a text button.
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div><!-- Teal / Column-->
-                        <picture>
-                            <source srcset="img/projects/project-sparki/JPG/600px/issue3-600px.jpg"
-                                media="(max-width:767px)">
-                            <img src="img/projects/project-sparki/JPG/1200px/issue3-1200px.jpg" alt="Problem 3">
-                        </picture>
-                    </div>
-
-                </div>
-
-                <div><!-- Teal / Column-->
-                    <h4>
-                        Developing the new quiz feature
-                    </h4>
+                <div class="left-align container analyzing-padding"><!-- Container / Yellow-->
+                    <h1>Analyzing and Implementing Changes</h1>
                     <p>
-                        Making new quizzes is an important feature of the app. I added a new tab so users could
-                        quickly and easily add new quizzes from anywhere in the app.
+                        After conducting usability tests on my prototypes, I prioritized the usability issues found
+                        during
+                        the tests and implemented the new changes into my prototypes.
                     </p>
                 </div>
+                
+                <div id="analyzing" class="container"><!-- Container / Yellow-->
 
-                <div class="row img"><!-- Green / Row-->
-                    <div><!-- Teal / Column-->
-                        <picture class="center">
-                            <source srcset="img/projects/project-sparki/JPG/600px/issue4-600px.jpg"
-                                media="(max-width:767px)">
-                            <img src="img/projects/project-sparki/JPG/1200px/issue4-1200px.jpg" alt="Problem 4">
-                        </picture>
+                    <div id="issue-1" class="row"><!-- Green / Row-->
+                        <div class="col-md-5"><!-- Teal / Column-->
+
+                            <div><!-- Teal / Column-->
+                                <h3>Viewing Quizzes</h3>
+                            </div>
+                            <div id="issue-text-1" class="row col-md-5"><!-- Green / Row-->
+                                <div class="col-md-6"><!-- Teal / Column-->
+                                    <h4>
+                                        Problem
+                                    </h4>
+                                    <p>
+                                        Users found it difficult to locate the quizzes.
+                                    </p>
+                                </div>
+
+                                <div class="col-md-6"><!-- Teal / Column-->
+                                    <h4>Steps to find a quiz</h4>
+                                    <ol class="padding-list">
+                                        <li>Navigate to the folder tab</li>
+                                        <li>Click the folder to find the quiz located in the folder</li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-7"><!-- Teal / Column-->
+                            <div class="img-width">
+                                <picture>
+                                    <source srcset="img/projects/project-sparki/JPG/600px/issue1-600px.jpg"
+                                        media="(max-width:767px)">
+                                    <img src="img/projects/project-sparki/JPG/1200px/issue1-1200px.jpg" alt="Problem 1">
+                                </picture>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
+                    <div id="issue-2" class="row"><!-- Green / Row-->
+                        <div id="issue-1-solution" class="col-md-5"><!-- Teal / Column-->
+                            <h4>Solution</h4>
+
+                            <div>
+                                <ol class="padding-list">
+                                    <li>Allow users to view quizzes first</li>
+                                    <li>Make the folder view a second option</li>
+                                    <li>The icon was changed</li>
+                                </ol>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-7"><!-- Teal / Column-->
+                            <div class="img-width">
+                                <picture>
+                                    <source srcset="img/projects/project-sparki/JPG/600px/issue2-600px.jpg"
+                                        media="(max-width:767px)">
+                                    <img src="img/projects/project-sparki/JPG/1200px/issue2-1200px.jpg" alt="Problem 2">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div><!-- Section / Orange-->
+                <div id="issues" class="container"><!-- Container / Yellow-->
+
+                    <div id="issue-3" class="row"><!-- Green / Row-->
+                        <div class="col-md-5"><!-- Teal / Column-->
+
+
+                            <div class="row"><!-- Green / Row-->
+                                <div><!-- Teal / Column-->
+                                    <h3>Make Quiz Button</h3>
+                                </div>
+
+                                <div id="issue-text-3" class="row"><!-- Green / Row-->
+                                    <div class="col-md-6"><!-- Teal / Column-->
+                                        <h4>
+                                            Problem
+                                        </h4>
+                                        <p>
+                                            Several testers found making a new quiz hard because the plus button
+                                            wasn’t clear enough.
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-6"><!-- Teal / Column-->
+                                        <h4>
+                                            Solution
+                                        </h4>
+                                        <p>
+                                            Change the icon button into a text button.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-7"><!-- Teal / Column-->
+                            <div class="img-width">
+                                <picture>
+                                    <source srcset="img/projects/project-sparki/JPG/600px/issue3-600px.jpg"
+                                        media="(max-width:767px)">
+                                    <img src="img/projects/project-sparki/JPG/1200px/issue3-1200px.jpg" alt="Problem 3">
+                                </picture>    
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="issue-4" class="row"><!-- Green / Row-->
+                        <div class="col-md-5 issue-4"><!-- Teal / Column-->
+                            <h3 class="center left-align">
+                                Developing the new quiz feature
+                            </h3>
+                            <p class="center left-align">
+                                Making new quizzes is an important feature of the app. I added a new tab so users could
+                                quickly and easily add new quizzes from anywhere in the app.
+                            </p>
+                        </div>
+
+                        <div class="center col-md-7 img"><!-- Teal / Column-->
+                            <div class="img-width">
+                                <picture>
+                                    <source srcset="img/projects/project-sparki/JPG/600px/issue4-600px.jpg"
+                                        media="(max-width:767px)">
+                                    <img src="img/projects/project-sparki/JPG/1200px/issue4-1200px.jpg" alt="Problem 4">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
 
@@ -678,7 +706,7 @@
                     just the beginning. Listed below are a few next steps I would take if I were to continue refining
                     this design.
                 </p>
-                <ul>
+                <ul class="padding-list">
                     <li>
                         Refine the quiz-making feature by adding dictation and screenshot options.
                     </li>
