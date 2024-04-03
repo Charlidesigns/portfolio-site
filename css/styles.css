@@ -103,7 +103,7 @@ img {
   }
 
 
-.icon {
+.icon { /* !!!may remove after replacing it with california animation!!!*/
     /* cherry icon width*/
     max-width: 50px;
     text-align: center;
@@ -246,6 +246,38 @@ nav>ul>li {
 
 nav>ul>li>a {
     padding: 0 10px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+nav>ul>li>a::before, nav>ul>li>a::after {
+    position: absolute;
+      content: "";
+      width: 0;
+      transition: .3s;
+    }
+
+nav>ul>li>a::before {
+    bottom: 0;
+    left: 50%;
+    border-top: 2px solid pink;
+}
+
+nav>ul>li>a::after {
+    right: 50%;
+    bottom: 0;
+    border-bottom: 2px solid pink;
+}
+
+nav>ul>li>a:hover::before, nav>ul>li>a:hover::after {
+    width: 50%;
+} 
+
+/* nav>ul>li>a {
+    padding: 0 10px;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 700;
@@ -255,14 +287,15 @@ nav>ul>li>a {
 nav>ul>li>a:hover,
 nav>ul>li>a:focus {
     text-decoration: underline;
-}
+    
+} */
 
 nav>ul>li>a:active {
-    text-decoration: underline;
+    width: 50%;
 }
 
 nav>ul>li>a:visited {
-    text-decoration: underline;
+    width: 50%;
 }
 
 /* ---------- Layout Styling ---------- */
@@ -372,6 +405,55 @@ footer {
 #hero .container-padding {
     margin: 30px 0;
 }
+
+/* ---------- CSS animation ---------- */
+
+  @keyframes color-change-sun {
+    0% {fill: #FF9E68;}
+    50% {fill: #FFC368;}
+    100% {fill: #FF725E;}
+  }
+
+  @keyframes cloud-move {
+    from {transform: translate(0,0px);}
+    to {transform: translate(200px,0px);}
+  }
+
+  @keyframes cloud-move-reverse {
+    from {transform: translate(0px,0px);}
+    to {transform: translate(-100px, 0px);}
+  }
+
+  @keyframes boat-move {
+    from {transform: translate(0px,0px);}
+    to {transform: translate(-100px, 0px);}
+  }
+  
+  
+.sun {
+    animation: 4s color-change-sun infinite alternate linear;
+}
+
+.cloud-1 {
+    animation: 20s cloud-move infinite alternate linear;
+}
+
+.cloud-2 {
+    animation: 30s cloud-move infinite alternate linear;
+}
+
+.cloud-3 {
+    animation: 25s cloud-move-reverse infinite alternate-reverse linear;
+}
+
+.cloud-4 {
+    animation: 35s cloud-move-reverse infinite alternate linear;
+}
+
+.boat {
+    animation: 10s boat-move infinite alternate ease-in-out;
+}
+
 
 /* #hero .padding-button {
 padding: 0px 0;
@@ -590,7 +672,6 @@ q {
 #research span {
     display: inline-block;
 }
-
 
 /* ==============================
 Media Queries | Responsive Layout
