@@ -83,10 +83,37 @@ img {
     width: 100%
 }
 
+.img-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    align-items: center;
+  }
+  
+  .img-column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+  }
+  
+  .img-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+
 .icon {
     /* cherry icon width*/
     max-width: 50px;
     text-align: center;
+}
+
+.icon-2 {
+    /* cherry icon width*/
+    max-width: 40em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .vertical-align {
@@ -125,6 +152,7 @@ link:focus {
     transition: 0.2s opacity;
     border-radius: 100px;
     padding: 10px 24px;
+    transition: 0.8s background-color;
 }
 
 .button:hover,
@@ -243,6 +271,11 @@ main {
     padding-top: 95px;
 }
 
+#graphics-page main,
+#about-me main {
+  padding: 6rem 0;
+}
+
 .container {
     width: 100%;
     padding: 0 15px;
@@ -293,6 +326,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px 24px;
 }
 
 
@@ -352,7 +386,7 @@ padding: 0px 0;
 }
 
 #project .container {
-    margin: 25px 0;
+    margin: 5% 0;
 }
 
 #project .row {
@@ -370,12 +404,24 @@ padding: 0px 0;
     text-align: center;
 }
 
-#graphics-page main {
-    padding-top: 140px;
-    padding-bottom: 90px;
+/* --- About Page --- */
+
+#about-me main {
+display: grid;
+row-gap: 2em;
 }
 
-/* --- About Page --- */
+#contact-img-grid-3 {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    column-gap: 8px;
+}
+
+#contact-img-grid-3 img {
+    object-fit: cover;
+}
+
 /* Hero */
 #about-me p {
     text-align: left;
@@ -393,11 +439,6 @@ padding: 0px 0;
     /*Text padding */
     text-align: left;
     padding: 30px 15px;
-}
-
-#about-me main {
-    padding-top: 140px;
-    padding-bottom: 40px;
 }
 
 #hobbies {
@@ -484,6 +525,63 @@ q {
     margin: 1em 0;
 }
 
+#sparki .img-column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+}
+
+#sparki .img-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    align-items: center;
+}
+
+#issue-1-solution h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#issue-1-solution div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+#issue-4 p{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#issues-solutions,
+#analyzing,
+#issues {
+    display: grid;
+    flex-direction: row;
+    row-gap: 2rem;
+}
+
+.analyzing-padding {
+    margin: 1rem 0;
+}
+
+#img-grid-about {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+}
+
+#sparki .img-column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+}
+
 /* --- Connect Project --- */
 #connect img {
     display: block;
@@ -521,6 +619,21 @@ Media Queries | Responsive Layout
         padding-top: 61px;
     }
 
+    /* Padding for main content of pages */
+
+    #graphics-page main,
+    #about-me main{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    #project,
+    #sparki-main-content{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    /* Columns */
     .col-md-6 {
         width: 50%;
         padding: 0 0px;
@@ -543,6 +656,19 @@ Media Queries | Responsive Layout
     }
 
     /* --- Content --- */
+
+    #header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        }
+
+    #lets-connect p.text-width {
+        width: 90%;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     #hero {
         background-image: url("../img/contact/contact-background-1200px.png");
@@ -571,12 +697,6 @@ Media Queries | Responsive Layout
         max-width: 800px;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    #analyzing .padding {
-        margin: 20px 0;
-        margin-bottom: 5em;
-        text-align: left;
     }
 
     #issue-1-solution h4 {
@@ -626,6 +746,35 @@ Media Queries | Responsive Layout
     .analyzing-padding {
         margin: 1rem 0;
     }
+
+    #img-grid-about {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 800px;
+    }
+
+    #sparki .img-column {
+        flex: 50%;
+        max-width: 50%;
+        padding: 0 4px;
+    }
+
+     /* --- About me image grid --- */
+      
+      .img-column {
+        flex: 33%;
+        max-width: 33%;
+        padding: 0 4px;
+      }
+
+      #contact-img-grid-3 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        row-gap: 12px;
+    }
+
+
 }
 
 
@@ -669,11 +818,49 @@ Media Queries | Responsive Layout
         max-width: 1200px;
     }
 
+    
+    /* Padding for main content of pages */
+
+    #graphics-page main,
+    #about-me main{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    #project,
+    #sparki-main-content{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    /* Content */
+
     #hero {
         padding: 140px 50px 120px;
         display: inline-block;
         width: 100%;
     }
+
+    #issue-4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+    #sparki-project-text,
+    #connect-project-text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 2rem;
+    }
+
+    #about-me main {
+    display: grid;
+    row-gap: 3em;
+    }
+
+     /* --- Sparki project --- */
 
     #issue-1-solution h4 {
         display: flex;
@@ -697,9 +884,15 @@ Media Queries | Responsive Layout
         }
 
         #issue-4 .left-align {
+            display: flex;
             text-align: left;
-            justify-content: left;
+            justify-content: left
         }
+
+        #issue-4 p {
+        margin: 0 0;
+        }
+
         #issue-2,
         #issue-4 {
             display: flex;
@@ -725,7 +918,6 @@ Media Queries | Responsive Layout
             display: flex;
             flex-direction: column;
         }
-
 }
 
 /* ---------- X-large devices (1440px or larger) ---------- */
