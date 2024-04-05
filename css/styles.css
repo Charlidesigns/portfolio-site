@@ -173,6 +173,25 @@ link:focus {
     width: 300px;
 }
 
+.linkedin-icon {
+    width: 48px;
+    height: 48px;
+    color: #009dff;
+    background-color: #ffffff;
+    font-size: 1.4em;
+    box-shadow: 0 3px 5px rgba(255, 47, 110, 0.2);
+    -webkit-box-shadow: 0 3px 5px rgba(255, 47, 110, 0.2);
+    -moz-box-shadow: 0 3px 5px rgba(255, 47, 110, 0.2);
+}
+
+.linkedin-icon:hover,
+.linkedin-icon:focus {
+    background-color: #ffffff;
+    box-shadow: 1px 3px 8px rgba(219, 0, 66, 0.2);
+    -webkit-box-shadow: 1px 3px 8px rgba(219, 0, 66, 0.2);
+    -moz-box-shadow: 1px 3px 8px rgba(219, 0, 66, 0.2);
+}
+
 /* Outlined buttons */
 .button.outlined {
     background-color: transparent;
@@ -192,19 +211,53 @@ link:focus {
     background-color: rgb(251 80 80 / 12%);
 }
 
-/* Text buttons */
-.button.text {
-    background-color: transparent;
-    color: #DB0042;
-}
+/* Text buttons (sparki Jump to Section buttons */
 
-.button.text:hover,
-.button.text:focus {
+.text:hover,
+.text:focus {
     color: #C2002E;
 }
 
-.button.text:active {
+.text:active {
     color: #850020;
+}
+
+.text {
+    padding: 10px 0px;
+    position: relative;
+    color: #DB0042;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: fit-content;
+}
+
+.text::before, .text:after {
+    position: absolute;
+      content: "";
+      width: 0;
+      transition: .3s;
+    }
+
+    .text::before {
+    bottom: 0;
+    left: 50%;
+    border-top: 2px solid pink;
+}
+
+.text::after {
+    right: 50%;
+    bottom: 0;
+    border-bottom: 2px solid pink;
+}
+
+.text:hover::before, .text:hover::after {
+    width: 50%;
+} 
+
+#sections a {
+    padding: 10px 0;
+    display: block;
 }
 
 /* ----------Components ---------- */
@@ -272,23 +325,10 @@ nav>ul>li>a::after {
     border-bottom: 2px solid pink;
 }
 
+
 nav>ul>li>a:hover::before, nav>ul>li>a:hover::after {
     width: 50%;
 } 
-
-/* nav>ul>li>a {
-    padding: 0 10px;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-nav>ul>li>a:hover,
-nav>ul>li>a:focus {
-    text-decoration: underline;
-    
-} */
 
 nav>ul>li>a:active {
     width: 50%;
@@ -298,7 +338,35 @@ nav>ul>li>a:visited {
     width: 50%;
 }
 
+/* ---------- Active tab transition ---------- */
+
+.active-tab:hover::before, .active-tab:hover::after {
+    width: 0%;
+} 
+
+.active-tab {
+    bottom: 0px;
+    border-bottom: 2px solid pink;
+}
+
 /* ---------- Layout Styling ---------- */
+
+/* Columns */
+
+.col-sm-1 {width: 8.33%;}
+.col-sm-2 {width: 16.66%;}
+.col-sm-3 {width: 25%;}
+.col-sm-4 {width: 33.33%;}
+.col-sm-5 {width: 41.66%;}
+.col-sm-6 {width: 50%;}
+.col-sm-7 {width: 58.33%;}
+.col-sm-8 {width: 66.66%;}
+.col-sm-9 {width: 75%;}
+.col-sm-10 {width: 83.33%;}
+.col-sm-11 {width: 91.66%;}
+.col-sm-12 {width: 100%;}
+
+
 main {
     /* Header top spacing */
     padding-top: 95px;
@@ -382,6 +450,10 @@ footer {
     text-align: center;
 }
 
+.linkedin-shadow {
+opacity: 0%;
+}
+
 /* --- Index Page --- */
 /* Hero */
 #hero h1,
@@ -455,10 +527,6 @@ footer {
 }
 
 
-/* #hero .padding-button {
-padding: 0px 0;
-} */
-
 /* Projects */
 #project h1,
 #project h3,
@@ -479,6 +547,19 @@ padding: 0px 0;
 .project-spacing {
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+#sparki-project-text,
+#connect-project-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#project>div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
 }
 
 /* --- Graphics --- */
@@ -562,6 +643,47 @@ row-gap: 2em;
 }
 
 /* --- Sparki Project --- */
+
+#sparki-main,
+#sparki-main>div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5em;
+}
+
+/* --- Jump to section --- */
+
+#sections ul {/* --- Removing list padding --- */
+    padding: 0px 0px 0 15px;
+    margin: 0px;
+}
+
+#sections .button {/* --- Removing button padding --- */
+    padding: 10px 0px;
+}
+
+#sections .row {
+    width: fit-content;
+}
+
+#sections {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- Issues and solution section --- */
+#issue-2,
+#issue-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+#issues-solutions .img-width-vertical{
+   width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #sparki-main .container {
     padding: 20px 15px;
@@ -665,6 +787,7 @@ q {
 }
 
 /* --- Connect Project --- */
+
 #connect img {
     display: block;
 }
@@ -679,11 +802,6 @@ Media Queries | Responsive Layout
 
 /* ---------- Medium devices (640px and larger) ---------- */
 @media only screen and (min-width:640px) {
-
-    [class*="col-"] {
-        float: left;
-        padding: 15px;
-    }
 
     header {
         text-align: left;
@@ -715,26 +833,19 @@ Media Queries | Responsive Layout
     }
 
     /* Columns */
-    .col-md-6 {
-        width: 50%;
-        padding: 0 0px;
-    }
 
-    .col-md-4 {
-        width: 33.33%;
-    }
-
-    .col-md-7 {
-        /* !!!!!!!!!!!!!!! Issues with overlap, had to reset width !!!!!!!!!!!!!!! */
-        width: 100%;
-        padding: 0 0px;
-    }
-
-    .col-md-5 {
-        /* !!!!!!!!!!!!!!! Issues with overlap, had to reset width !!!!!!!!!!!!!!! */
-        width: 100%;
-        padding: 0 0px;
-    }
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
 
     /* --- Content --- */
 
@@ -763,6 +874,20 @@ Media Queries | Responsive Layout
         margin: 30px 0;
     }
 
+    #sparki-project-text,
+    #connect-project-text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 2em;
+    }
+
+    #project>div{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1em;
+    }
+
     body {
         font-size: 14px;
         line-height: 1.4;
@@ -780,6 +905,16 @@ Media Queries | Responsive Layout
         margin-right: auto;
     }
 
+    /* --- Jump to section --- */
+    #sections .row{
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        column-gap: 2em;
+    }
+
+     /* --- Issues and solutions section --- */
+
     #issue-1-solution h4 {
         display: flex;
         justify-content: center;
@@ -796,6 +931,12 @@ Media Queries | Responsive Layout
 
     #issues-solutions .img-width{
         max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #issues-solutions .img-width-vertical{
+        max-width: 400px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -861,27 +1002,20 @@ Media Queries | Responsive Layout
 
 /* ---------- Large devices (1024px or larger) ---------- */
 @media only screen and (min-width:1024px) {
-    .col-md-7 {
-        width: 60%;
-        padding: 0 0px;
-    }
+ /* Columns */
 
-    .col-md-5 {
-        width: 40%;
-        padding: 0 0px;
-    }
-
-    #sparki .col-md-6 {
-        /* !!!!!!!!!!!!!!! Issues with overlap, had to reset width !!!!!!!!!!!!!!! */
-        width: 100%;
-        padding: 0 0px;
-    }
-
-    #issue-1 .col-md-6 {
-        /* !!!!!!!!!!!!!!! Issues with overlap, had to reset width !!!!!!!!!!!!!!! */
-        width: 250%; /* !!! 100% updated to 250% to fix "viewing quizzes" layout (ask mentor)/ col-md-5 has issues !!! */
-        padding: 0 0px;
-    }
+ .col-lg-1 {width: 8.33%;}
+ .col-lg-2 {width: 16.66%;}
+ .col-lg-3 {width: 25%;}
+ .col-lg-4 {width: 33.33%;}
+ .col-lg-5 {width: 41.66%;}
+ .col-lg-6 {width: 50%;}
+ .col-lg-7 {width: 58.33%;}
+ .col-lg-8 {width: 66.66%;}
+ .col-lg-9 {width: 75%;}
+ .col-lg-10 {width: 83.33%;}
+ .col-lg-11 {width: 91.66%;}
+ .col-lg-12 {width: 100%;}
 
     body {
         font-size: 16px;
@@ -902,6 +1036,7 @@ Media Queries | Responsive Layout
     
     /* Padding for main content of pages */
 
+
     #graphics-page main,
     #about-me main{
         padding-left: 4rem;
@@ -916,6 +1051,15 @@ Media Queries | Responsive Layout
 
     /* Content */
 
+    /* --- Jump to section --- */
+
+    #sections .row{
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        column-gap: 4em;
+    }
+
     #hero {
         padding: 140px 50px 120px;
         display: inline-block;
@@ -928,21 +1072,11 @@ Media Queries | Responsive Layout
         align-items: center;
         }
 
-    #sparki-project-text,
-    #connect-project-text {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        column-gap: 2rem;
-    }
-
     #about-me main {
     display: grid;
     row-gap: 3em;
     }
-
-     /* --- Sparki project --- */
-
+  
     #issue-1-solution h4 {
         display: flex;
         justify-content: left;
