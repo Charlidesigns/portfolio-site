@@ -103,22 +103,16 @@ img {
   }
 
 
-.icon { /* !!!may remove after replacing it with california animation!!!*/
-    /* cherry icon width*/
+.cherry-icon {
     max-width: 50px;
     text-align: center;
 }
 
-.icon-2 {
-    /* cherry icon width*/
-    max-width: 40em;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.vertical-align {
-    display: inline-block;
-    vertical-align: middle;
+.vertical-align {/* vertical alignment */
+margin: 5px 0px 5px;  
+display: inline-block;
+vertical-align: middle;
 }
 
 .button-icon {
@@ -265,7 +259,7 @@ link:focus {
 header {
     background-color: #FB5950;
     text-align: center;
-    padding: 10px;
+    padding: 0px 15px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
@@ -282,19 +276,33 @@ header {
 }
 
 /* navigation */
-nav {
-    display: inline-block;
-    width: 100%;
+
+header {
+    text-align: left;
+    align-items: center;
+    padding: 10px 15px 0;
 }
+
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 28px;
+    padding-right: 0;
+}
+
+.navtoggle li:not(:last-child) {
+    display: none;
+  }
+
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
 
 nav>ul {
     list-style-type: none;
     padding: 0;
-
-}
-
-nav>ul>li {
-    display: inline-block;
 }
 
 nav>ul>li>a {
@@ -303,50 +311,45 @@ nav>ul>li>a {
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
+    font-weight: 400;
+}
+
+
+.navtoggle.responsive li {
+    display: block;
+}
+
+
+/* Menu styling */
+
+
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+
+  .navtoggle.responsive li  {
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: lighter;
+  }
+
+  .navtoggle.responsive li:last-child  {
+    width: 0;
+    padding: 0;
+  }
+  
+  .navtoggle.responsive ul {
+    border-top: 2px solid rgba(255, 255, 255, 0.603);
+    padding: 30px 0px 10px;
+  }
+
+
+
+  .active-tab {
     font-weight: 700;
-}
-
-nav>ul>li>a::before, nav>ul>li>a::after {
-    position: absolute;
-      content: "";
-      width: 0;
-      transition: .3s;
-    }
-
-nav>ul>li>a::before {
-    bottom: 0;
-    left: 50%;
-    border-top: 2px solid pink;
-}
-
-nav>ul>li>a::after {
-    right: 50%;
-    bottom: 0;
-    border-bottom: 2px solid pink;
-}
-
-
-nav>ul>li>a:hover::before, nav>ul>li>a:hover::after {
-    width: 50%;
-} 
-
-nav>ul>li>a:active {
-    width: 50%;
-}
-
-nav>ul>li>a:visited {
-    width: 50%;
-}
-
-/* ---------- Active tab transition ---------- */
-
-.active-tab:hover::before, .active-tab:hover::after {
-    width: 0%;
-} 
-
-.active-tab {
-    bottom: 0px;
-    border-bottom: 2px solid pink;
 }
 
 /* ---------- Layout Styling ---------- */
@@ -369,7 +372,7 @@ nav>ul>li>a:visited {
 
 main {
     /* Header top spacing */
-    padding-top: 95px;
+    padding-top: 66px;
 }
 
 #graphics-page main,
@@ -452,6 +455,11 @@ footer {
 
 .linkedin-shadow {
 opacity: 0%;
+}
+
+#contact span {
+    color: #595959;
+    opacity: 50%;
 }
 
 /* --- Index Page --- */
@@ -565,6 +573,9 @@ opacity: 0%;
 /* --- Graphics --- */
 #graphics {
     text-align: center;
+}
+#graphics-page body {
+    height: 100vh;
 }
 
 /* --- About Page --- */
@@ -803,15 +814,120 @@ Media Queries | Responsive Layout
 /* ---------- Medium devices (640px and larger) ---------- */
 @media only screen and (min-width:640px) {
 
+      /* Columns */
+
+      .col-md-1 {width: 8.33%;}
+      .col-md-2 {width: 16.66%;}
+      .col-md-3 {width: 25%;}
+      .col-md-4 {width: 33.33%;}
+      .col-md-5 {width: 41.66%;}
+      .col-md-6 {width: 50%;}
+      .col-md-7 {width: 58.33%;}
+      .col-md-8 {width: 66.66%;}
+      .col-md-9 {width: 75%;}
+      .col-md-10 {width: 83.33%;}
+      .col-md-11 {width: 91.66%;}
+      .col-md-12 {width: 100%;}
+
+    /* ---------- Navigation header element ---------- */
+
+    nav>ul>li {
+        display: inline-block;
+    }
+
     header {
         text-align: left;
+        align-items: center;
+    }
 
+    .navtoggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+  nav {
+        display: flex;
+        justify-content: right;
+        align-items: right;
     }
 
     nav {
         width: auto;
         float: right;
     }
+
+    .navtoggle li:not(:last-child) {  /* Hidding menu */
+        display: inline-block;
+      }
+
+      .navtoggle li:last-child {  /* Hidding menu */
+        display: none;
+      }
+
+      nav>ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    
+    nav>ul>li>a {
+        padding: 0 10px;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 400;
+    }
+    
+    nav>ul>li>a::before, nav>ul>li>a::after {
+        position: absolute;
+          content: "";
+          width: 0;
+          transition: .3s;
+        }
+    
+    nav>ul>li>a::before {
+        bottom: 0;
+        left: 50%;
+        border-top: 2px solid pink;
+    }
+    
+    nav>ul>li>a::after {
+        right: 50%;
+        bottom: 0;
+        border-bottom: 2px solid pink;
+    }
+    
+    
+    nav>ul>li>a:hover::before, nav>ul>li>a:hover::after {
+        width: 50%;
+    } 
+    
+    nav>ul>li>a:active{
+        width: 50%;
+    }
+    
+    nav>ul>li>a:visited {
+        width: 50%;
+    }
+    
+    
+    /* ---------- Active tab transition ---------- */
+
+    .active-tab:hover::before, .active-tab:hover::after {
+        width: 0%;
+    } 
+
+    .active-tab {
+        bottom: 0px;
+        border-bottom: 2px solid pink;
+        font-weight: 700;
+    }
+
+
+     /* ---------- Other elements ---------- */
 
     main {
         /* Header top spacing */
@@ -832,20 +948,6 @@ Media Queries | Responsive Layout
         padding-right: 2rem;
     }
 
-    /* Columns */
-
-    .col-md-1 {width: 8.33%;}
-    .col-md-2 {width: 16.66%;}
-    .col-md-3 {width: 25%;}
-    .col-md-4 {width: 33.33%;}
-    .col-md-5 {width: 41.66%;}
-    .col-md-6 {width: 50%;}
-    .col-md-7 {width: 58.33%;}
-    .col-md-8 {width: 66.66%;}
-    .col-md-9 {width: 75%;}
-    .col-md-10 {width: 83.33%;}
-    .col-md-11 {width: 91.66%;}
-    .col-md-12 {width: 100%;}
 
     /* --- Content --- */
 
