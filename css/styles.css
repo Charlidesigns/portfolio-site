@@ -268,6 +268,7 @@ header {
     -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .vertical-center {
@@ -510,6 +511,11 @@ footer {
     padding: 60px 10px 30px;
     display: inline-block;
     width: 100%;
+}
+
+#hero svg {
+    width: 80%;
+    clip-path: circle(40% at 50% 50%);
 }
 
 #hero .padding {
@@ -1071,6 +1077,10 @@ Media Queries | Responsive Layout
         width: 100%;
     }
 
+    #hero svg {
+        width: 70%;
+    }
+
     #hero .padding-button {
         margin: 30px 0;
     }
@@ -1297,15 +1307,19 @@ Media Queries | Responsive Layout
     }
 
     #hero {
-        padding: 140px 50px 120px;
+        padding: 3em 50px 4em;
         display: inline-block;
         width: 100%;
     }
 
+    #hero svg {
+        width: 60%;
+    }
+
     #issue-4 {
         display: flex;
-        justify-content: center;
-        align-items: center;
+   margin-left: auto;
+   margin-right: auto;
     }
 
     #about-me main {
