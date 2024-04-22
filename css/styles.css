@@ -49,7 +49,7 @@ h3 {
     font-family: "Berkshire Swash", serif;
     font-weight: 400;
     font-style: normal;
-    color: #FB463C;
+    color: #EB0046;
 }
 
 .h2-medium {
@@ -67,11 +67,11 @@ h3 {
 
 /* ---------- Font color ---------- */
 .red-font-1 {
-    color: #FB463C;
+    color: #EB0046;
 }
 
 .red-font-2 {
-    color: #DB0042;
+    color: #EB0046;
 }
 
 .white-font-2 {
@@ -130,7 +130,7 @@ img {
 
 .link:hover,
 link:focus {
-    color: #C2002E;
+    color: #cd001b;
 }
 
 .link:visited {
@@ -140,7 +140,7 @@ link:focus {
 /* ----------Buttons ---------- */
 .button {
     display: inline-block;
-    background-color: #FB463C;
+    background-color: #EB0046;
     color: #ffffff;
     font-weight: 700;
     text-decoration: none;
@@ -152,7 +152,7 @@ link:focus {
 
 .button:hover,
 .button:focus {
-    background-color: #DB0042;
+    background-color: #cd001b;
     box-shadow: 0 3px 5px rgba(219, 0, 66, 0.2);
     -webkit-box-shadow: 0 3px 5px rgba(219, 0, 66, 0.2);
     -moz-box-shadow: 0 3px 5px rgba(219, 0, 66, 0.2);
@@ -190,10 +190,10 @@ link:focus {
 /* Outlined buttons */
 .button.outlined {
     background-color: transparent;
-    color: #FB463C;
+    color: #DB0042;
     border-style: solid;
     border-width: 2px;
-    border-color: #FB463C;
+    border-color: #DB0042;
 }
 
 .button.outlined:hover,
@@ -210,7 +210,7 @@ link:focus {
 
 .text:hover,
 .text:focus {
-    color: #C2002E;
+    color: #cd001b;
 }
 
 .text:active {
@@ -260,7 +260,7 @@ link:focus {
 /* ----------Components ---------- */
 /* header */
 header {
-    background-color: #FB5950;
+    background-color: #DB0042;
     text-align: center;
     padding: 0px 15px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
@@ -647,6 +647,12 @@ footer {
 #about-me main {
     display: grid;
     row-gap: 2em;
+}
+
+#about-me-hero {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #contact-img-grid-3 {
@@ -1100,7 +1106,7 @@ Media Queries | Responsive Layout
     }
 
     body {
-        font-size: 14px;
+        font-size: 14p;
         line-height: 1.4;
     }
 

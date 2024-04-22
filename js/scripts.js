@@ -1,4 +1,4 @@
-console.log('Welcome to my UX portfolio')
+console.log('Welcome to my UX portfolio');
 
 function menuToggle() {
     var x = document.getElementById('myNavtoggle');
