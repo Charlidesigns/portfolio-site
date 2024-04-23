@@ -879,6 +879,10 @@ q {
     display: inline-block;
 }
 
+#connect main>div {
+    padding: 0;
+    }
+
 /* ==============================
 Media Queries | Responsive Layout
 ================================= */
@@ -935,6 +939,7 @@ Media Queries | Responsive Layout
     .col-md-12 {
         width: 100%;
     }
+    
 
     /* ---------- Navigation header element ---------- */
 
@@ -1213,10 +1218,6 @@ Media Queries | Responsive Layout
         row-gap: 12px;
     }
 
-
-}
-
-
 /* ---------- Large devices (1024px or larger) ---------- */
 @media only screen and (min-width:1024px) {
     /* Columns */
@@ -1301,6 +1302,7 @@ Media Queries | Responsive Layout
         padding-right: 4rem;
     }
 
+    
     /* Content */
 
     /* --- Jump to section --- */
@@ -1390,5 +1392,7 @@ Media Queries | Responsive Layout
         flex-direction: column;
     }
 }
+}
+
 
 /* ---------- X-large devices (1440px or larger) ---------- */
